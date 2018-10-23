@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Haptics/HapticFeedbackEffect_Base.h"
 #include "MyMotionController.generated.h"
 
 UCLASS()
@@ -23,19 +24,25 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	class USphereComponent * SphereCollider;
+	class AActor* attachedActor;
+	bool WantsToGrip2;
+	AActor* AttachedActor2;
 
 	UPROPERTY(EditAnywhere, Category = "MotionController")
-		bool WantsToGrip2;
-	UPROPERTY(EditAnywhere, Category = "MotionController")
-		AActor* AttachedActor2;
+		class UMotionControllerComponent* motionController2;
+
 	UPROPERTY(EditAnywhere, Category = "MotionController")
 		UHapticFeedbackEffect_Base* HapticEffect;
-	UPROPERTY(EditAnywhere, Category = "MotionController")
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MotionController", Meta = (DisplayName = "Hand", ExposeOnSpawn = true))
 		EControllerHand Hand;
+
 	UFUNCTION(BlueprintCallable, Category = "MotionController")
 		void GrabActor2();
 	UFUNCTION(BlueprintCallable, Category = "MotionController")
-		bool GetActorNearHand2(TScriptInterface<class INewPickupActorInterface> &Interface);
+		void ReleaseActor2();
+	UFUNCTION(BlueprintCallable, Category = "MotionController")
+		class AActor* GetActorNearHand2();
 	UFUNCTION(BlueprintCallable, Category = "MotionController")
 		void RumbleController2(float intensity);
 };
