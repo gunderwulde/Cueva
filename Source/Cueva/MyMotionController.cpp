@@ -23,11 +23,16 @@ void AMyMotionController::BeginPlay()
 	Super::BeginPlay();
 	SphereCollider = this->FindComponentByClass<USphereComponent>();
 	motionController2 = this->FindComponentByClass<UMotionControllerComponent>();
+}
+
+void AMyMotionController::SetHand(EControllerHand hand) {
+	Hand = hand;
 	if (Hand == EControllerHand::Left) {
 		FindComponentByClass<USkinnedMeshComponent>()->SetWorldScale3D(FVector(1, 1, -1)); // La mano izquierda va espejada.
 		motionController2->MotionSource = _TEXT("Left");
 	}
 	else motionController2->MotionSource = _TEXT("Right");
+
 }
 
 // Called every frame

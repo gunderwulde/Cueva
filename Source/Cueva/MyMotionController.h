@@ -34,8 +34,8 @@ public:
 	UPROPERTY(EditAnywhere, Category = "MotionController")
 		UHapticFeedbackEffect_Base* HapticEffect;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MotionController", Meta = (DisplayName = "Hand", ExposeOnSpawn = true))
-		EControllerHand Hand;
+	EControllerHand Hand;
+	void SetHand(EControllerHand hand);
 
 	UFUNCTION(BlueprintCallable, Category = "MotionController")
 		void GrabActor2();
