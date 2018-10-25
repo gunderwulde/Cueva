@@ -2,6 +2,7 @@
 
 #include "MyMotionControllerPawn.h"
 #include "MyMotionController.h"
+#include "Components/InputComponent.h"
 #include "Engine/World.h"
 
 // Sets default values
@@ -15,8 +16,16 @@ AMyMotionControllerPawn::AMyMotionControllerPawn()
 // Called when the game starts or when spawned
 void AMyMotionControllerPawn::BeginPlay()
 {
+	auto components = this->GetComponents();
+	for (auto component : components) {
+		if (component->GetFName() == "VROrigin") {
+			VROriginRef = Cast<USceneComponent>(component);
+			break;
+		}
+	}
+
 	Super::BeginPlay();
-	
+	SetupPlayerHeight();
 }
 
 // Called every frame
@@ -27,24 +36,41 @@ void AMyMotionControllerPawn::Tick(float DeltaTime)
 }
 
 // Called to bind functionality to input
-void AMyMotionControllerPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+void AMyMotionControllerPawn::SetupPlayerInputComponent(UInputComponent* InputComponent)
 {
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	Super::SetupPlayerInputComponent(InputComponent);
 
+	InputComponent->BindAction<MyMotionControllerDelegate>("GrabLeft", IE_Pressed, this, &AMyMotionControllerPawn::OnGrab, &LeftController);
+	InputComponent->BindAction<MyMotionControllerDelegate>("GrabLeft", IE_Released, this, &AMyMotionControllerPawn::OnRelease, &LeftController);
+
+	InputComponent->BindAction<MyMotionControllerDelegate>("GrabRight", IE_Pressed, this, &AMyMotionControllerPawn::OnGrab, &RightController );
+	InputComponent->BindAction<MyMotionControllerDelegate>("GrabRight", IE_Released, this, &AMyMotionControllerPawn::OnRelease, &RightController );
 }
 
-void AMyMotionControllerPawn::SpawnControllers(UClass* Class, USceneComponent* MyVROrigin ) {
-	FVector Location(0.0f, 0.0f, 0.0f);
-	FRotator Rotation(0.0f, 0.0f, 0.0f);
-	LeftController = (AMyMotionController*)GetWorld()->SpawnActor(Class, &Location, &Rotation);
+void AMyMotionControllerPawn::SpawnControllers(UClass* Class) {
+
+	LeftController = (AMyMotionController*)GetWorld()->SpawnActor(Class);
 	LeftController->SetHand(EControllerHand::Left);
 	LeftController->SetOwner(this);
-	LeftController->AttachToComponent(MyVROrigin, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, EAttachmentRule::SnapToTarget, EAttachmentRule::KeepWorld, false));
+	LeftController->AttachToComponent(VROriginRef, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, EAttachmentRule::SnapToTarget, EAttachmentRule::KeepWorld, false));
 
 
-	RightController = (AMyMotionController*)GetWorld()->SpawnActor(Class, &Location, &Rotation);
+	RightController = (AMyMotionController*)GetWorld()->SpawnActor(Class);
 	RightController->SetHand(EControllerHand::Right);
 	RightController->SetOwner(this);
-	RightController->AttachToComponent(MyVROrigin, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, EAttachmentRule::SnapToTarget, EAttachmentRule::KeepWorld, false) );
+	RightController->AttachToComponent(VROriginRef, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, EAttachmentRule::SnapToTarget, EAttachmentRule::KeepWorld, false) );
 }
 
+void AMyMotionControllerPawn::OnGrab(AMyMotionController** controller) {
+	if (controller != nullptr && (*controller) != nullptr)
+		(*controller)->GrabActor();
+}
+
+void AMyMotionControllerPawn::OnRelease(AMyMotionController** controller) {
+	if(controller!=nullptr && (*controller) != nullptr)
+		(*controller)->ReleaseActor();
+}
+
+
+void AMyMotionControllerPawn::SetupPlayerHeight() {
+}

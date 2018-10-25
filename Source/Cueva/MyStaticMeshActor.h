@@ -17,12 +17,10 @@ class CUEVA_API AMyStaticMeshActor : public AStaticMeshActor, public INewPickupA
 	
 	AMyStaticMeshActor();
 public:
-	UFUNCTION(Category = "NewPickupActorInterface", BlueprintNativeEvent, BlueprintCallable)
-	void Pickup(class USceneComponent* controller);
+//	void Pickup(class USceneComponent* controller);
 	virtual void Pickup_Implementation(class USceneComponent* controller) override;
 
-	UFUNCTION(Category = "NewPickupActorInterface", BlueprintNativeEvent, BlueprintCallable)
-	void Drop();
+//	void Drop();
 	virtual void Drop_Implementation() override;
 
 	

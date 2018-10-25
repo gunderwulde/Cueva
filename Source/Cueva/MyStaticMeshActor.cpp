@@ -4,12 +4,10 @@
 #include "MyMotionController.h"
 #include "Components/StaticMeshComponent.h"
 
-AMyStaticMeshActor::AMyStaticMeshActor()
-{
+AMyStaticMeshActor::AMyStaticMeshActor() {
 }
 
-void AMyStaticMeshActor::Pickup_Implementation(USceneComponent* controller)
-{
+void AMyStaticMeshActor::Pickup_Implementation(USceneComponent* controller) {
 	if (controller) {
 		UStaticMeshComponent* sm = GetStaticMeshComponent();
 		sm->SetSimulatePhysics(false);

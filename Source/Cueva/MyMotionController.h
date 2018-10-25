@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "Haptics/HapticFeedbackEffect_Base.h"
+#include "Components/StaticMeshComponent.h"
 #include "MyMotionController.generated.h"
 
 UCLASS()
@@ -23,26 +24,37 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-	class USphereComponent * SphereCollider;
+	class USteamVRChaperoneComponent* steamVRChaperoneComponent;
+	class USphereComponent * sphereCollider;
+	class USkeletalMeshComponent* skeletalMeshComponent;
+	class UHandAnimInstance* handAnimInstance;
 	class AActor* attachedActor;
-	bool WantsToGrip2;
-	AActor* AttachedActor2;
+	bool  wantsToGrip;
 
-	UPROPERTY(EditAnywhere, Category = "MotionController")
-		class UMotionControllerComponent* motionController2;
-
-	UPROPERTY(EditAnywhere, Category = "MotionController")
+	class UMotionControllerComponent* motionController;
+	UPROPERTY(VisibleAnywhere, Category = "MotionController")
 		UHapticFeedbackEffect_Base* HapticEffect;
+
+	UPROPERTY(VisibleAnywhere, Category = "MotionController")
+		UStaticMeshComponent* TeleportMark;
 
 	EControllerHand Hand;
 	void SetHand(EControllerHand hand);
 
+	void GrabActor();
+	void ReleaseActor();
 	UFUNCTION(BlueprintCallable, Category = "MotionController")
-		void GrabActor2();
+		class AActor* GetActorNearHand();
 	UFUNCTION(BlueprintCallable, Category = "MotionController")
-		void ReleaseActor2();
-	UFUNCTION(BlueprintCallable, Category = "MotionController")
-		class AActor* GetActorNearHand2();
-	UFUNCTION(BlueprintCallable, Category = "MotionController")
-		void RumbleController2(float intensity);
+		void RumbleController(float intensity);
+
+	void UpdateHandAnimation();
+	void SetHandCollider();
+
+	UFUNCTION()
+		void OnBeginOverlap(class UPrimitiveComponent* OverlappedComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+	UFUNCTION()
+		void OnHit(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
+
+	void SetupRoomscaleOutline();
 };
