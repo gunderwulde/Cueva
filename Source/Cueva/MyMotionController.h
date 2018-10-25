@@ -12,8 +12,12 @@ UCLASS()
 class CUEVA_API AMyMotionController : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
+
+	FVector		thumbAxe;
+	FRotator	teleportRotation;
+	bool		isValidTeleporDestination;
+
+public:
 	// Sets default values for this actor's properties
 	AMyMotionController();
 
@@ -21,32 +25,41 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	AMyMotionController* other;
+
 	class USteamVRChaperoneComponent* steamVRChaperoneComponent;
 	class USphereComponent * sphereCollider;
 	class USkeletalMeshComponent* skeletalMeshComponent;
 	class UHandAnimInstance* handAnimInstance;
 	class AActor* attachedActor;
 	bool  wantsToGrip;
+	bool  isTeleportActive2;
+	bool  isRoomScale2;
+
+	FRotator initialControllerRotation2;
+
 
 	class UMotionControllerComponent* motionController;
-	UPROPERTY(VisibleAnywhere, Category = "MotionController")
+	UPROPERTY(EditDefaultsOnly, Category = "MotionController")
 		UHapticFeedbackEffect_Base* HapticEffect;
 
-	UPROPERTY(VisibleAnywhere, Category = "MotionController")
-		UStaticMeshComponent* TeleportMark;
+	class UStaticMeshComponent* teleportCylinder;
+	class UStaticMeshComponent* roomScaleMesh;
+	class UStaticMeshComponent* arcEndPoint;
+	class UArrowComponent* arcDirection;
 
 	EControllerHand Hand;
 	void SetHand(EControllerHand hand);
 
 	void GrabActor();
 	void ReleaseActor();
-	UFUNCTION(BlueprintCallable, Category = "MotionController")
-		class AActor* GetActorNearHand();
-	UFUNCTION(BlueprintCallable, Category = "MotionController")
-		void RumbleController(float intensity);
+
+	class AActor* GetActorNearHand();
+	void RumbleController(float intensity);
 
 	void UpdateHandAnimation();
 	void SetHandCollider();
@@ -57,4 +70,19 @@ public:
 		void OnHit(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
 
 	void SetupRoomscaleOutline();
+
+	void ActivateTeleporter();
+	UFUNCTION(BlueprintCallable)
+	void DisableTeleporter();
+	void ExecuteTeleportation2();
+
+	void SetThumbX(float amount);
+	void SetThumbY(float amount);
+
+	void SetTeleportRotation();
+	void UpdateArc();
+	void ClearArc();
+	void TraceTeleportDestination();
+	void UpdateArcSpline(TArray<FVector> *tracedPoints);
+	void UpdateArcEndPoint(FVector *newLocation);
 };

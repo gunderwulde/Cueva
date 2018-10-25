@@ -11,15 +11,21 @@ class CUEVA_API AMyMotionControllerPawn : public APawn
 {
 	GENERATED_BODY()
 
+	class USceneComponent* VROriginRef;
 	class AMyMotionController *LeftController;
 	class AMyMotionController *RightController;
-	
 
 	DECLARE_DELEGATE_OneParam(MyMotionControllerDelegate, AMyMotionController**);
 	void OnGrab(class AMyMotionController** controller);
 	void OnRelease(class AMyMotionController** controller);
+	void OnTeleportInit(class AMyMotionController** controller);
+	void OnTeleportEnd(class AMyMotionController** controller);
+
+	void ThumbX(float amount, class AMyMotionController** controller);
+	void ThumbY(float amount, class AMyMotionController** controller);
 
 	void SetupPlayerHeight();
+	void SpawnControllers();
 
 public:
 	// Sets default values for this pawn's properties
@@ -35,11 +41,7 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
-	UPROPERTY(VisibleAnywhere, Category = "MotionControllerPawn")
-		class USceneComponent* VROriginRef;
-
-	UFUNCTION(BlueprintCallable, Category = "MyMotionControllerPawn")
-		void SpawnControllers(UClass* Class);
-
+	
+	UPROPERTY(EditDefaultsOnly, Category = "MotionController")
+		class UClass* HandClass;
 };

@@ -5,7 +5,7 @@
 #include "NewPickupActorInterface.h"
 #include "Components/SphereComponent.h"
 #include "Components/SkeletalMeshComponent.h"
-//#include "Components/StaticMeshComponent.h"
+#include "Components/ArrowComponent.h"
 #include "HandAnimInstance.h"
 #include "SteamVRChaperoneComponent.h"
 #include "Classes/Kismet/GameplayStatics.h"
@@ -20,6 +20,17 @@ AMyMotionController::AMyMotionController()
 // Called when the game starts or when spawned
 void AMyMotionController::BeginPlay() {
 	Super::BeginPlay();
+	auto components = this->GetComponents();
+	for (auto component : components) {
+		if (component->GetFName() == "TeleportCylinder") teleportCylinder = Cast<UStaticMeshComponent>(component);
+		if (component->GetFName() == "RoomScaleMesh") roomScaleMesh = Cast<UStaticMeshComponent>(component);
+		if (component->GetFName() == "ArcEndPoint") arcEndPoint = Cast<UStaticMeshComponent>(component);
+		if (component->GetFName() == "ArcDirection") arcDirection = Cast<UArrowComponent>(component);
+	}
+
+	teleportCylinder->SetVisibility(false, true);
+	roomScaleMesh->SetVisibility(false);
+
 	steamVRChaperoneComponent = this->FindComponentByClass<USteamVRChaperoneComponent>();
 	skeletalMeshComponent = this->FindComponentByClass<USkeletalMeshComponent>();
 	handAnimInstance = Cast<UHandAnimInstance>(skeletalMeshComponent->AnimScriptInstance);
@@ -44,6 +55,7 @@ void AMyMotionController::SetHand(EControllerHand hand) {
 // Called every frame
 void AMyMotionController::Tick(float DeltaTime) {
 	Super::Tick(DeltaTime);
+	UpdateArc();
 	UpdateHandAnimation();
 	SetHandCollider();
 }
@@ -106,16 +118,15 @@ void AMyMotionController::UpdateHandAnimation() {
 
 void AMyMotionController::SetHandCollider() {
 	switch (handAnimInstance->GripState2) {
-	case 0:
-	case 1:
-		skeletalMeshComponent->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-		break;
-	case 2:
-		skeletalMeshComponent->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
-		break;
+		case 0:
+		case 1:
+			skeletalMeshComponent->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+			break;
+		case 2:
+			skeletalMeshComponent->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+			break;
 	}
 }
-
 
 void AMyMotionController::OnBeginOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult) {
 	UStaticMeshComponent* sm = Cast<UStaticMeshComponent>(OtherComp);
@@ -130,3 +141,78 @@ void AMyMotionController::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor
 void AMyMotionController::SetupRoomscaleOutline() {
 	TArray <FVector> bounds = steamVRChaperoneComponent->GetBounds();
 }
+
+void AMyMotionController::ActivateTeleporter() {
+	if(other!=nullptr) other->DisableTeleporter();
+
+	isTeleportActive2 = true;
+	teleportCylinder->SetVisibility(true, true);
+	roomScaleMesh->SetVisibility(isRoomScale2);
+	initialControllerRotation2 = motionController->GetComponentRotation();
+}
+
+void AMyMotionController::DisableTeleporter() {
+	if (isTeleportActive2) {
+		isTeleportActive2 = false;
+		teleportCylinder->SetVisibility(false, true);
+		arcEndPoint->SetVisibility(false, false);
+		roomScaleMesh->SetVisibility(false, false);
+	}
+}
+
+void AMyMotionController::ExecuteTeleportation2() {
+	if (isTeleportActive2) {
+
+	}
+}
+
+void AMyMotionController::SetThumbX(float amount) {
+	thumbAxe.X = amount;
+}
+
+void AMyMotionController::SetThumbY(float amount) {
+	thumbAxe.Y = amount;
+
+}
+
+void AMyMotionController::SetTeleportRotation() {
+	if (isTeleportActive2) {
+		teleportRotation = thumbAxe.Rotation(); // mirar la funcion teleportRotation =  MotionControllerPawn.GetRotationFromInput(thumbAxe)
+	}
+}
+
+void AMyMotionController::UpdateArc() {
+	ClearArc();
+	if (isTeleportActive2) {
+		TraceTeleportDestination();
+	}
+}
+
+void AMyMotionController::ClearArc() {
+}
+
+void AMyMotionController::TraceTeleportDestination() {
+
+	FVector startPosition = arcDirection->GetComponentLocation();
+	FVector launchVelocity = arcDirection->GetForwardVector() * 900.0f; // Telepor launch velocity.
+
+	// Realizar un tiro parabolico.
+
+	TArray<FVector> tracedPoints;
+	FVector navMeshLocation;
+	FVector traceLocation;
+
+	UpdateArcSpline(&tracedPoints);
+	UpdateArcEndPoint(&traceLocation);
+
+	isValidTeleporDestination = true;
+}
+
+
+void AMyMotionController::UpdateArcSpline(TArray<FVector> *tracedPoints) {
+}
+
+void AMyMotionController::UpdateArcEndPoint(FVector *newLocation) {
+}
+
+

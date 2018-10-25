@@ -11,18 +11,10 @@
  * 
  */
 UCLASS()
-class CUEVA_API AMyStaticMeshActor : public AStaticMeshActor, public INewPickupActorInterface
-{
+class CUEVA_API AMyStaticMeshActor : public AStaticMeshActor, public INewPickupActorInterface {
 	GENERATED_BODY()
-	
 	AMyStaticMeshActor();
 public:
-//	void Pickup(class USceneComponent* controller);
 	virtual void Pickup_Implementation(class USceneComponent* controller) override;
-
-//	void Drop();
 	virtual void Drop_Implementation() override;
-
-	
-	
 };

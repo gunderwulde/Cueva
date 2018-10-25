@@ -2,7 +2,11 @@
 
 #include "MyMotionControllerPawn.h"
 #include "MyMotionController.h"
+#include "HeadMountedDisplay.h"
 #include "Components/InputComponent.h"
+#include "IXRTrackingSystem.h"
+#include "IMotionController.h"
+#include "Engine.h"
 #include "Engine/World.h"
 
 // Sets default values
@@ -14,8 +18,7 @@ AMyMotionControllerPawn::AMyMotionControllerPawn()
 }
 
 // Called when the game starts or when spawned
-void AMyMotionControllerPawn::BeginPlay()
-{
+void AMyMotionControllerPawn::BeginPlay() {
 	auto components = this->GetComponents();
 	for (auto component : components) {
 		if (component->GetFName() == "VROrigin") {
@@ -26,39 +29,52 @@ void AMyMotionControllerPawn::BeginPlay()
 
 	Super::BeginPlay();
 	SetupPlayerHeight();
+	SpawnControllers();
 }
 
 // Called every frame
 void AMyMotionControllerPawn::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	LeftController->SetTeleportRotation();
+	RightController->SetTeleportRotation();
 
 }
 
 // Called to bind functionality to input
-void AMyMotionControllerPawn::SetupPlayerInputComponent(UInputComponent* InputComponent)
-{
+void AMyMotionControllerPawn::SetupPlayerInputComponent(UInputComponent* InputComponent) {
 	Super::SetupPlayerInputComponent(InputComponent);
 
 	InputComponent->BindAction<MyMotionControllerDelegate>("GrabLeft", IE_Pressed, this, &AMyMotionControllerPawn::OnGrab, &LeftController);
 	InputComponent->BindAction<MyMotionControllerDelegate>("GrabLeft", IE_Released, this, &AMyMotionControllerPawn::OnRelease, &LeftController);
+	InputComponent->BindAction<MyMotionControllerDelegate>("GrabRight", IE_Pressed, this, &AMyMotionControllerPawn::OnGrab, &RightController);
+	InputComponent->BindAction<MyMotionControllerDelegate>("GrabRight", IE_Released, this, &AMyMotionControllerPawn::OnRelease, &RightController);
 
-	InputComponent->BindAction<MyMotionControllerDelegate>("GrabRight", IE_Pressed, this, &AMyMotionControllerPawn::OnGrab, &RightController );
-	InputComponent->BindAction<MyMotionControllerDelegate>("GrabRight", IE_Released, this, &AMyMotionControllerPawn::OnRelease, &RightController );
+	InputComponent->BindAction<MyMotionControllerDelegate>("TeleportLeft", IE_Pressed, this, &AMyMotionControllerPawn::OnTeleportInit, &LeftController);
+	InputComponent->BindAction<MyMotionControllerDelegate>("TeleportLeft", IE_Released, this, &AMyMotionControllerPawn::OnTeleportEnd, &LeftController);
+	InputComponent->BindAction<MyMotionControllerDelegate>("TeleportRight", IE_Pressed, this, &AMyMotionControllerPawn::OnTeleportInit, &RightController);
+	InputComponent->BindAction<MyMotionControllerDelegate>("TeleportRight", IE_Released, this, &AMyMotionControllerPawn::OnTeleportEnd, &RightController);
+
+	InputComponent->BindAxis<MyMotionControllerDelegate>("MotionControllerThumbLeft_X", this, &AMyMotionControllerPawn::ThumbX, &LeftController);
+	InputComponent->BindAxis<MyMotionControllerDelegate>("MotionControllerThumbLeft_Y", this, &AMyMotionControllerPawn::ThumbY, &LeftController);
+	InputComponent->BindAxis<MyMotionControllerDelegate>("MotionControllerThumbRight_X", this, &AMyMotionControllerPawn::ThumbX, &RightController);
+	InputComponent->BindAxis<MyMotionControllerDelegate>("MotionControllerThumbRight_Y", this, &AMyMotionControllerPawn::ThumbY, &RightController);
+
 }
 
-void AMyMotionControllerPawn::SpawnControllers(UClass* Class) {
-
-	LeftController = (AMyMotionController*)GetWorld()->SpawnActor(Class);
+void AMyMotionControllerPawn::SpawnControllers() {
+	LeftController = (AMyMotionController*)GetWorld()->SpawnActor(HandClass);
 	LeftController->SetHand(EControllerHand::Left);
 	LeftController->SetOwner(this);
 	LeftController->AttachToComponent(VROriginRef, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, EAttachmentRule::SnapToTarget, EAttachmentRule::KeepWorld, false));
 
-
-	RightController = (AMyMotionController*)GetWorld()->SpawnActor(Class);
+	RightController = (AMyMotionController*)GetWorld()->SpawnActor(HandClass);
 	RightController->SetHand(EControllerHand::Right);
 	RightController->SetOwner(this);
 	RightController->AttachToComponent(VROriginRef, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, EAttachmentRule::SnapToTarget, EAttachmentRule::KeepWorld, false) );
+
+	LeftController->other = RightController;
+	RightController->other = LeftController;
 }
 
 void AMyMotionControllerPawn::OnGrab(AMyMotionController** controller) {
@@ -67,10 +83,41 @@ void AMyMotionControllerPawn::OnGrab(AMyMotionController** controller) {
 }
 
 void AMyMotionControllerPawn::OnRelease(AMyMotionController** controller) {
-	if(controller!=nullptr && (*controller) != nullptr)
+	if (controller != nullptr && (*controller) != nullptr)
 		(*controller)->ReleaseActor();
 }
 
+void AMyMotionControllerPawn::OnTeleportInit(AMyMotionController** controller) {
+	if (controller != nullptr && (*controller) != nullptr) {
+		(*controller)->ActivateTeleporter();		
+	}
+}
+
+void AMyMotionControllerPawn::OnTeleportEnd(AMyMotionController** controller) {
+	if (controller != nullptr && (*controller) != nullptr) {
+		(*controller)->ExecuteTeleportation2();
+	}
+}
+
+void AMyMotionControllerPawn::ThumbX(float amount, AMyMotionController** controller) {
+	if (controller != nullptr && (*controller) != nullptr) {
+		(*controller)->SetThumbX(amount);
+	}
+}
+
+void AMyMotionControllerPawn::ThumbY(float amount, AMyMotionController** controller ) {
+	if (controller != nullptr && (*controller) != nullptr) {
+		(*controller)->SetThumbY(amount);
+	}
+}
 
 void AMyMotionControllerPawn::SetupPlayerHeight() {
+	FName name = "none";
+	if ( GEngine && GEngine->XRSystem.IsValid() && GEngine->XRSystem->GetHMDDevice() && GEngine->XRSystem->GetHMDDevice()->IsHMDConnected()) {
+		name = GEngine->XRSystem->GetSystemName();
+	}
+	if(name== "OculusHMD" || name=="SteamVR") { // Suelo
+		GEngine->XRSystem->SetTrackingOrigin(EHMDTrackingOrigin::Floor);
+
+	}
 }
