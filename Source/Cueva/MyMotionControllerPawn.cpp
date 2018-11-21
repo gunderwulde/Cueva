@@ -55,10 +55,10 @@ void AMyMotionControllerPawn::SetupPlayerInputComponent(UInputComponent* InputCo
 	InputComponent->BindAction<MyMotionControllerDelegate>("TeleportRight", IE_Pressed, this, &AMyMotionControllerPawn::OnTeleportInit, &RightController);
 	InputComponent->BindAction<MyMotionControllerDelegate>("TeleportRight", IE_Released, this, &AMyMotionControllerPawn::OnTeleportEnd, &RightController);
 
-	InputComponent->BindAxis<MyMotionControllerDelegate>("MotionControllerThumbLeft_X", this, &AMyMotionControllerPawn::ThumbX, &LeftController);
-	InputComponent->BindAxis<MyMotionControllerDelegate>("MotionControllerThumbLeft_Y", this, &AMyMotionControllerPawn::ThumbY, &LeftController);
-	InputComponent->BindAxis<MyMotionControllerDelegate>("MotionControllerThumbRight_X", this, &AMyMotionControllerPawn::ThumbX, &RightController);
-	InputComponent->BindAxis<MyMotionControllerDelegate>("MotionControllerThumbRight_Y", this, &AMyMotionControllerPawn::ThumbY, &RightController);
+	InputComponent->BindAxis("MotionControllerThumbLeft_X", this, &AMyMotionControllerPawn::ThumbLeftX);
+	InputComponent->BindAxis("MotionControllerThumbLeft_Y", this, &AMyMotionControllerPawn::ThumbLeftY);
+	InputComponent->BindAxis("MotionControllerThumbRight_X", this, &AMyMotionControllerPawn::ThumbRightX);
+	InputComponent->BindAxis("MotionControllerThumbRight_Y", this, &AMyMotionControllerPawn::ThumbRightY);
 
 }
 
@@ -99,16 +99,20 @@ void AMyMotionControllerPawn::OnTeleportEnd(AMyMotionController** controller) {
 	}
 }
 
-void AMyMotionControllerPawn::ThumbX(float amount, AMyMotionController** controller) {
-	if (controller != nullptr && (*controller) != nullptr) {
-		(*controller)->SetThumbX(amount);
-	}
+void AMyMotionControllerPawn::ThumbLeftX(float amount) {
+	LeftController->SetThumbX(amount);
 }
 
-void AMyMotionControllerPawn::ThumbY(float amount, AMyMotionController** controller ) {
-	if (controller != nullptr && (*controller) != nullptr) {
-		(*controller)->SetThumbY(amount);
-	}
+void AMyMotionControllerPawn::ThumbLeftY(float amount) {
+	LeftController->SetThumbY(amount);
+}
+
+void AMyMotionControllerPawn::ThumbRightX(float amount) {
+	LeftController->SetThumbX(amount);
+}
+
+void AMyMotionControllerPawn::ThumbRightY(float amount) {
+	LeftController->SetThumbY(amount);
 }
 
 void AMyMotionControllerPawn::SetupPlayerHeight() {

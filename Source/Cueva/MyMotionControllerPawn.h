@@ -21,8 +21,11 @@ class CUEVA_API AMyMotionControllerPawn : public APawn
 	void OnTeleportInit(class AMyMotionController** controller);
 	void OnTeleportEnd(class AMyMotionController** controller);
 
-	void ThumbX(float amount, class AMyMotionController** controller);
-	void ThumbY(float amount, class AMyMotionController** controller);
+	void ThumbLeftX(float amount);
+	void ThumbLeftY(float amount);
+
+	void ThumbRightX(float amount);
+	void ThumbRightY(float amount);
 
 	void SetupPlayerHeight();
 	void SpawnControllers();
