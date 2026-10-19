@@ -1,0 +1,1058 @@
+{
+  "sequences": [
+    {
+      "asset": "/Game/Assets/Sequences/Menu.Menu",
+      "tracks": [
+        {
+          "name": "MovieSceneAkAudioEventTrack_0",
+          "class": "MemoriaAudioEventTrack",
+          "binding": null,
+          "sections": [
+            {
+              "name": "MovieSceneAkAudioEventSection_0",
+              "class": "MemoriaAudioEventSection",
+              "start": 96,
+              "end": 116,
+              "event": "/Game/Audio/MUSIC_LoopOUT.MUSIC_LoopOUT",
+              "event_name": "MUSIC_LoopOUT",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_1",
+              "class": "MemoriaAudioEventSection",
+              "start": 233,
+              "end": 1447,
+              "event": "/Game/Audio/SFX_STUART_CLEAN.SFX_STUART_CLEAN",
+              "event_name": "SFX_STUART_CLEAN",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_2",
+              "class": "MemoriaAudioEventSection",
+              "start": 204,
+              "end": 1447,
+              "event": "/Game/Audio/SFX_STUART_AMB.SFX_STUART_AMB",
+              "event_name": "SFX_STUART_AMB",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_3",
+              "class": "MemoriaAudioEventSection",
+              "start": 7,
+              "end": 201,
+              "event": "/Game/Audio/SFX_Start.SFX_Start",
+              "event_name": "SFX_Start",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asset": "/Game/Assets/Sequences/Valley.Valley",
+      "tracks": [
+        {
+          "name": "MovieSceneAkAudioEventTrack_0",
+          "class": "MemoriaAudioEventTrack",
+          "binding": null,
+          "sections": [
+            {
+              "name": "MovieSceneAkAudioEventSection_0",
+              "class": "MemoriaAudioEventSection",
+              "start": 162,
+              "end": 890,
+              "event": "/Game/Audio/DX_B_1.DX_B_1",
+              "event_name": "DX_B_1",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_1",
+              "class": "MemoriaAudioEventSection",
+              "start": 1000,
+              "end": 1709,
+              "event": "/Game/Audio/DX_B_2.DX_B_2",
+              "event_name": "DX_B_2",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_2",
+              "class": "MemoriaAudioEventSection",
+              "start": -2,
+              "end": 1903,
+              "event": "/Game/Audio/MUSIC_intro_2_07.MUSIC_intro_2_07",
+              "event_name": "MUSIC_intro_2_07",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            }
+          ]
+        },
+        {
+          "name": "MovieSceneAkAudioEventTrack_3",
+          "class": "MemoriaAudioEventTrack",
+          "binding": "<Struct 'Guid' (0x0000013C597E0170) {}>",
+          "sections": [
+            {
+              "name": "MovieSceneAkAudioEventSection_0",
+              "class": "MemoriaAudioEventSection",
+              "start": 0,
+              "end": 837,
+              "event": "/Game/Audio/DEER.DEER",
+              "event_name": "DEER",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            }
+          ]
+        },
+        {
+          "name": "MovieSceneAkAudioEventTrack_2",
+          "class": "MemoriaAudioEventTrack",
+          "binding": "<Struct 'Guid' (0x0000013C597E3260) {}>",
+          "sections": [
+            {
+              "name": "MovieSceneAkAudioEventSection_0",
+              "class": "MemoriaAudioEventSection",
+              "start": 837,
+              "end": 1831,
+              "event": "/Game/Audio/SFX_CAVE_Door.SFX_CAVE_Door",
+              "event_name": "SFX_CAVE_Door",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            }
+          ]
+        },
+        {
+          "name": "MovieSceneAkAudioEventTrack_1",
+          "class": "MemoriaAudioEventTrack",
+          "binding": "<Struct 'Guid' (0x0000013C597ECDA0) {}>",
+          "sections": [
+            {
+              "name": "MovieSceneAkAudioEventSection_0",
+              "class": "MemoriaAudioEventSection",
+              "start": -2,
+              "end": 837,
+              "event": "/Game/Audio/SFX_EXT_AMB.SFX_EXT_AMB",
+              "event_name": "SFX_EXT_AMB",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asset": "/Game/Assets/Sequences/Zona_I.Zona_I",
+      "tracks": [
+        {
+          "name": "MovieSceneAkAudioEventTrack_0",
+          "class": "MemoriaAudioEventTrack",
+          "binding": null,
+          "sections": [
+            {
+              "name": "MovieSceneAkAudioEventSection_0",
+              "class": "MemoriaAudioEventSection",
+              "start": 90,
+              "end": 1469,
+              "event": "/Game/Audio/DX_B_3.DX_B_3",
+              "event_name": "DX_B_3",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_1",
+              "class": "MemoriaAudioEventSection",
+              "start": 1469,
+              "end": 1815,
+              "event": "/Game/Audio/DX_B_4.DX_B_4",
+              "event_name": "DX_B_4",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_2",
+              "class": "MemoriaAudioEventSection",
+              "start": 1873,
+              "end": 2609,
+              "event": "/Game/Audio/DX_B_5.DX_B_5",
+              "event_name": "DX_B_5",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_3",
+              "class": "MemoriaAudioEventSection",
+              "start": 2658,
+              "end": 3225,
+              "event": "/Game/Audio/DX_B_6.DX_B_6",
+              "event_name": "DX_B_6",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_4",
+              "class": "MemoriaAudioEventSection",
+              "start": 3377,
+              "end": 3750,
+              "event": "/Game/Audio/DX_B_7.DX_B_7",
+              "event_name": "DX_B_7",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_6",
+              "class": "MemoriaAudioEventSection",
+              "start": 26,
+              "end": 1586,
+              "event": "/Game/Audio/MUSIC_MEM_intro_PT2.MUSIC_MEM_intro_PT2",
+              "event_name": "MUSIC_MEM_intro_PT2",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_7",
+              "class": "MemoriaAudioEventSection",
+              "start": 3328,
+              "end": 4556,
+              "event": "/Game/Audio/MUSIC_memoria_1_2_07.MUSIC_memoria_1_2_07",
+              "event_name": "MUSIC_memoria_1_2_07",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_5",
+              "class": "MemoriaAudioEventSection",
+              "start": 1200,
+              "end": 3750,
+              "event": "/Game/Audio/SFX_Start.SFX_Start",
+              "event_name": "SFX_Start",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            }
+          ]
+        },
+        {
+          "name": "MovieSceneAkAudioRTPCTrack_0",
+          "class": "MemoriaAudioRTPCTrack",
+          "binding": null,
+          "sections": [
+            {
+              "name": "MovieSceneAkAudioRTPCSection_0",
+              "class": "MemoriaAudioRTPCSection",
+              "start": null,
+              "end": null
+            }
+          ]
+        },
+        {
+          "name": "MovieSceneAkAudioEventTrack_1",
+          "class": "MemoriaAudioEventTrack",
+          "binding": "<Struct 'Guid' (0x0000013C5C307FA0) {}>",
+          "sections": [
+            {
+              "name": "MovieSceneAkAudioEventSection_0",
+              "class": "MemoriaAudioEventSection",
+              "start": 254,
+              "end": 751,
+              "event": "/Game/Audio/SFX_MEMORIA0_FX.SFX_MEMORIA0_FX",
+              "event_name": "SFX_MEMORIA0_FX",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            }
+          ]
+        },
+        {
+          "name": "MovieSceneAkAudioEventTrack_5",
+          "class": "MemoriaAudioEventTrack",
+          "binding": "<Struct 'Guid' (0x0000013C5C308380) {}>",
+          "sections": [
+            {
+              "name": "MovieSceneAkAudioEventSection_0",
+              "class": "MemoriaAudioEventSection",
+              "start": 2121,
+              "end": 2666,
+              "event": "/Game/Audio/SFX_CABAN_A_IN.SFX_CABAN_A_IN",
+              "event_name": "SFX_CABAN_A_IN",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            }
+          ]
+        },
+        {
+          "name": "MovieSceneAkAudioEventTrack_4",
+          "class": "MemoriaAudioEventTrack",
+          "binding": "<Struct 'Guid' (0x0000013C5C3084A0) {}>",
+          "sections": [
+            {
+              "name": "MovieSceneAkAudioEventSection_0",
+              "class": "MemoriaAudioEventSection",
+              "start": 1873,
+              "end": 3969,
+              "event": "/Game/Audio/SFX_FUEGOS.SFX_FUEGOS",
+              "event_name": "SFX_FUEGOS",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            }
+          ]
+        },
+        {
+          "name": "MovieSceneAkAudioEventTrack_6",
+          "class": "MemoriaAudioEventTrack",
+          "binding": "<Struct 'Guid' (0x0000013C5C308300) {}>",
+          "sections": [
+            {
+              "name": "MovieSceneAkAudioEventSection_0",
+              "class": "MemoriaAudioEventSection",
+              "start": 3305,
+              "end": 4424,
+              "event": "/Game/Audio/SFX_MEMORIA1_Whispers.SFX_MEMORIA1_Whispers",
+              "event_name": "SFX_MEMORIA1_Whispers",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asset": "/Game/Assets/Sequences/Zona_IV_Animation.Zona_IV_Animation",
+      "tracks": [
+        {
+          "name": "MovieSceneAkAudioEventTrack_0",
+          "class": "MemoriaAudioEventTrack",
+          "binding": null,
+          "sections": [
+            {
+              "name": "MovieSceneAkAudioEventSection_1",
+              "class": "MemoriaAudioEventSection",
+              "start": 89,
+              "end": 356,
+              "event": "/Game/Audio/DX_B_8.DX_B_8",
+              "event_name": "DX_B_8",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_2",
+              "class": "MemoriaAudioEventSection",
+              "start": 416,
+              "end": 905,
+              "event": "/Game/Audio/DX_B_9.DX_B_9",
+              "event_name": "DX_B_9",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_3",
+              "class": "MemoriaAudioEventSection",
+              "start": 971,
+              "end": 1461,
+              "event": "/Game/Audio/DX_B_10.DX_B_10",
+              "event_name": "DX_B_10",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_5",
+              "class": "MemoriaAudioEventSection",
+              "start": 2254,
+              "end": 3689,
+              "event": "/Game/Audio/DX_B_12.DX_B_12",
+              "event_name": "DX_B_12",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_0",
+              "class": "MemoriaAudioEventSection",
+              "start": 1461,
+              "end": 2090,
+              "event": "/Game/Audio/SFX_SHELTER_IN.SFX_SHELTER_IN",
+              "event_name": "SFX_SHELTER_IN",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_6",
+              "class": "MemoriaAudioEventSection",
+              "start": 2254,
+              "end": 4774,
+              "event": "/Game/Audio/MUSIC_memoria_2_2_07.MUSIC_memoria_2_2_07",
+              "event_name": "MUSIC_memoria_2_2_07",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_7",
+              "class": "MemoriaAudioEventSection",
+              "start": 5,
+              "end": 2202,
+              "event": "/Game/Audio/SFX_Start.SFX_Start",
+              "event_name": "SFX_Start",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_8",
+              "class": "MemoriaAudioEventSection",
+              "start": 117,
+              "end": 746,
+              "event": "/Game/Audio/SFX_SHELTER_IN.SFX_SHELTER_IN",
+              "event_name": "SFX_SHELTER_IN",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_9",
+              "class": "MemoriaAudioEventSection",
+              "start": 1650,
+              "end": 2220,
+              "event": "/Game/Audio/DX_B_11.DX_B_11",
+              "event_name": "DX_B_11",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            }
+          ]
+        },
+        {
+          "name": "MovieSceneAkAudioRTPCTrack_0",
+          "class": "MemoriaAudioRTPCTrack",
+          "binding": null,
+          "sections": [
+            {
+              "name": "MovieSceneAkAudioRTPCSection_0",
+              "class": "MemoriaAudioRTPCSection",
+              "start": null,
+              "end": null
+            }
+          ]
+        },
+        {
+          "name": "MovieSceneAkAudioEventTrack_2",
+          "class": "MemoriaAudioEventTrack",
+          "binding": "<Struct 'Guid' (0x0000013C5C30E4A0) {}>",
+          "sections": [
+            {
+              "name": "MovieSceneAkAudioEventSection_0",
+              "class": "MemoriaAudioEventSection",
+              "start": 3001,
+              "end": 4554,
+              "event": "/Game/Audio/SFX_MEMORIA2_Whispers.SFX_MEMORIA2_Whispers",
+              "event_name": "SFX_MEMORIA2_Whispers",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asset": "/Game/Assets/Sequences/Zona_IX.Zona_IX",
+      "tracks": [
+        {
+          "name": "MovieSceneAkAudioEventTrack_0",
+          "class": "MemoriaAudioEventTrack",
+          "binding": null,
+          "sections": [
+            {
+              "name": "MovieSceneAkAudioEventSection_0",
+              "class": "MemoriaAudioEventSection",
+              "start": 80,
+              "end": 1036,
+              "event": "/Game/Audio/DX_B_13.DX_B_13",
+              "event_name": "DX_B_13",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_1",
+              "class": "MemoriaAudioEventSection",
+              "start": 1074,
+              "end": 1712,
+              "event": "/Game/Audio/DX_B_14.DX_B_14",
+              "event_name": "DX_B_14",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_2",
+              "class": "MemoriaAudioEventSection",
+              "start": 2552,
+              "end": 3112,
+              "event": "/Game/Audio/DX_B_15.DX_B_15",
+              "event_name": "DX_B_15",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_3",
+              "class": "MemoriaAudioEventSection",
+              "start": 3161,
+              "end": 3319,
+              "event": "/Game/Audio/DX_B_16.DX_B_16",
+              "event_name": "DX_B_16",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_4",
+              "class": "MemoriaAudioEventSection",
+              "start": 1036,
+              "end": 5931,
+              "event": "/Game/Audio/MUSIC_memoria_3_2_07.MUSIC_memoria_3_2_07",
+              "event_name": "MUSIC_memoria_3_2_07",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_5",
+              "class": "MemoriaAudioEventSection",
+              "start": 2552,
+              "end": 3696,
+              "event": "/Game/Audio/SFX_FINAL_Whispers.SFX_FINAL_Whispers",
+              "event_name": "SFX_FINAL_Whispers",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_6",
+              "class": "MemoriaAudioEventSection",
+              "start": 16,
+              "end": 1178,
+              "event": "/Game/Audio/SFX_Start.SFX_Start",
+              "event_name": "SFX_Start",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            },
+            {
+              "name": "MovieSceneAkAudioEventSection_7",
+              "class": "MemoriaAudioEventSection",
+              "start": 4102,
+              "end": 4335,
+              "event": "/Game/Audio/FinalMusicStop.FinalMusicStop",
+              "event_name": "FinalMusicStop",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            }
+          ]
+        },
+        {
+          "name": "MovieSceneAkAudioRTPCTrack_0",
+          "class": "MemoriaAudioRTPCTrack",
+          "binding": null,
+          "sections": [
+            {
+              "name": "MovieSceneAkAudioRTPCSection_0",
+              "class": "MemoriaAudioRTPCSection",
+              "start": null,
+              "end": null
+            }
+          ]
+        },
+        {
+          "name": "MovieSceneAkAudioEventTrack_2",
+          "class": "MemoriaAudioEventTrack",
+          "binding": "<Struct 'Guid' (0x0000013C5E9F14B0) {}>",
+          "sections": [
+            {
+              "name": "MovieSceneAkAudioEventSection_0",
+              "class": "MemoriaAudioEventSection",
+              "start": 1036,
+              "end": 3737,
+              "event": "/Game/Audio/SFX_STREAM.SFX_STREAM",
+              "event_name": "SFX_STREAM",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            }
+          ]
+        },
+        {
+          "name": "MovieSceneAkAudioEventTrack_1",
+          "class": "MemoriaAudioEventTrack",
+          "binding": "<Struct 'Guid' (0x0000013C5E9F1C00) {}>",
+          "sections": [
+            {
+              "name": "MovieSceneAkAudioEventSection_0",
+              "class": "MemoriaAudioEventSection",
+              "start": 1346,
+              "end": 2453,
+              "event": "/Game/Audio/SFX_MEMORIA_Leon.SFX_MEMORIA_Leon",
+              "event_name": "SFX_MEMORIA_Leon",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            }
+          ]
+        },
+        {
+          "name": "MovieSceneAkAudioEventTrack_3",
+          "class": "MemoriaAudioEventTrack",
+          "binding": "<Struct 'Guid' (0x0000013C5E9F04A0) {}>",
+          "sections": [
+            {
+              "name": "MovieSceneAkAudioEventSection_0",
+              "class": "MemoriaAudioEventSection",
+              "start": 1197,
+              "end": 2154,
+              "event": "/Game/Audio/Leonr_PRE.Leonr_PRE",
+              "event_name": "Leonr_PRE",
+              "stop_at_section_end": true,
+              "retrigger_event": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "asset": "/Game/Assets/Sequences/Zona_Test.Zona_Test",
+      "tracks": []
+    }
+  ],
+  "maps": [
+    {
+      "map": "Start",
+      "audio_components": [
+        {
+          "actor": "/Game/Assets/Scenes/Start.Start:PersistentLevel.MUSIC_LoopIN_2",
+          "component": "AkAudioComponent0",
+          "event": "/Game/Audio/MUSIC_LoopIN.MUSIC_LoopIN",
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Start.Start:PersistentLevel.Player",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Menu.Menu:PersistentLevel.Teleport",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Menu.Menu:PersistentLevel.Teleport2",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_I.Zona_I:PersistentLevel.SFX_MEMORIA0_FX_2",
+          "component": "AkAudioComponent0",
+          "event": "/Game/Audio/SFX_MEMORIA0_FX.SFX_MEMORIA0_FX",
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_I.Zona_I:PersistentLevel.SFX_FUEGOS_5",
+          "component": "AkAudioComponent0",
+          "event": "/Game/Audio/SFX_FUEGOS.SFX_FUEGOS",
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_I.Zona_I:PersistentLevel.SFX_CABAN_A_IN_8",
+          "component": "AkAudioComponent0",
+          "event": "/Game/Audio/SFX_CABAN_A_IN.SFX_CABAN_A_IN",
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_I.Zona_I:PersistentLevel.Teleport_BP",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_I.Zona_I:PersistentLevel.Teleport_BP1",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_I.Zona_I:PersistentLevel.Teleport_BP2",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_I.Zona_I:PersistentLevel.Teleport_BP4",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_I.Zona_I:PersistentLevel.Teleport_BP5",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_I.Zona_I:PersistentLevel.SFX_MEMORIA1_Whispers_11",
+          "component": "AkAudioComponent0",
+          "event": "/Game/Audio/SFX_MEMORIA1_Whispers.SFX_MEMORIA1_Whispers",
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Valley.Valley:PersistentLevel.SFX_EXT_AMB_2",
+          "component": "AkAudioComponent0",
+          "event": "/Game/Audio/SFX_EXT_AMB.SFX_EXT_AMB",
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Valley.Valley:PersistentLevel.SFX_CAVE_Door_7",
+          "component": "AkAudioComponent0",
+          "event": "/Game/Audio/SFX_CAVE_Door.SFX_CAVE_Door",
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Valley.Valley:PersistentLevel.DEER_4",
+          "component": "AkAudioComponent0",
+          "event": "/Game/Audio/DEER.DEER",
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Valley.Valley:PersistentLevel.Teleport2",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_IV.Zona_IV:PersistentLevel.Teleport_BP0",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_IV.Zona_IV:PersistentLevel.Teleport_BP1",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_IV.Zona_IV:PersistentLevel.Teleport_BP2",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_IV.Zona_IV:PersistentLevel.Teleport_BP3",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_IV.Zona_IV:PersistentLevel.SFX_MEMORIA2_Whispers_2",
+          "component": "AkAudioComponent0",
+          "event": "/Game/Audio/SFX_MEMORIA2_Whispers.SFX_MEMORIA2_Whispers",
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_IX.Zona_IX:PersistentLevel.SFX_STREAM_5",
+          "component": "AkAudioComponent0",
+          "event": "/Game/Audio/SFX_STREAM.SFX_STREAM",
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_IX.Zona_IX:PersistentLevel.Leonr_PRE_5",
+          "component": "AkAudioComponent0",
+          "event": "/Game/Audio/Leonr_PRE.Leonr_PRE",
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_IX.Zona_IX:PersistentLevel.Teleport_BP0",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_IX.Zona_IX:PersistentLevel.Teleport_BP1",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_IX.Zona_IX:PersistentLevel.Teleport_BP2",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_IX.Zona_IX:PersistentLevel.MUSIC_memoria_3_2_07_2",
+          "component": "AkAudioComponent0",
+          "event": "/Game/Audio/MUSIC_memoria_3_2_07.MUSIC_memoria_3_2_07",
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_Test.Zona_Test:PersistentLevel.Teleport_BP",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_Test.Zona_Test:PersistentLevel.Teleport_BP2",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        }
+      ]
+    },
+    {
+      "map": "Menu",
+      "audio_components": [
+        {
+          "actor": "/Game/Assets/Scenes/Menu.Menu:PersistentLevel.Teleport",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Menu.Menu:PersistentLevel.Teleport2",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        }
+      ]
+    },
+    {
+      "map": "Valley",
+      "audio_components": [
+        {
+          "actor": "/Game/Assets/Scenes/Valley.Valley:PersistentLevel.SFX_EXT_AMB_2",
+          "component": "AkAudioComponent0",
+          "event": "/Game/Audio/SFX_EXT_AMB.SFX_EXT_AMB",
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Valley.Valley:PersistentLevel.SFX_CAVE_Door_7",
+          "component": "AkAudioComponent0",
+          "event": "/Game/Audio/SFX_CAVE_Door.SFX_CAVE_Door",
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Valley.Valley:PersistentLevel.DEER_4",
+          "component": "AkAudioComponent0",
+          "event": "/Game/Audio/DEER.DEER",
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Valley.Valley:PersistentLevel.Teleport2",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        }
+      ]
+    },
+    {
+      "map": "Zona_I",
+      "audio_components": [
+        {
+          "actor": "/Game/Assets/Scenes/Zona_I.Zona_I:PersistentLevel.SFX_MEMORIA0_FX_2",
+          "component": "AkAudioComponent0",
+          "event": "/Game/Audio/SFX_MEMORIA0_FX.SFX_MEMORIA0_FX",
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_I.Zona_I:PersistentLevel.SFX_FUEGOS_5",
+          "component": "AkAudioComponent0",
+          "event": "/Game/Audio/SFX_FUEGOS.SFX_FUEGOS",
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_I.Zona_I:PersistentLevel.SFX_CABAN_A_IN_8",
+          "component": "AkAudioComponent0",
+          "event": "/Game/Audio/SFX_CABAN_A_IN.SFX_CABAN_A_IN",
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_I.Zona_I:PersistentLevel.Teleport_BP",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_I.Zona_I:PersistentLevel.Teleport_BP1",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_I.Zona_I:PersistentLevel.Teleport_BP2",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_I.Zona_I:PersistentLevel.Teleport_BP4",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_I.Zona_I:PersistentLevel.Teleport_BP5",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_I.Zona_I:PersistentLevel.SFX_MEMORIA1_Whispers_11",
+          "component": "AkAudioComponent0",
+          "event": "/Game/Audio/SFX_MEMORIA1_Whispers.SFX_MEMORIA1_Whispers",
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        }
+      ]
+    },
+    {
+      "map": "Zona_IV",
+      "audio_components": [
+        {
+          "actor": "/Game/Assets/Scenes/Zona_IV.Zona_IV:PersistentLevel.Teleport_BP0",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_IV.Zona_IV:PersistentLevel.Teleport_BP1",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_IV.Zona_IV:PersistentLevel.Teleport_BP2",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_IV.Zona_IV:PersistentLevel.Teleport_BP3",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_IV.Zona_IV:PersistentLevel.SFX_MEMORIA2_Whispers_2",
+          "component": "AkAudioComponent0",
+          "event": "/Game/Audio/SFX_MEMORIA2_Whispers.SFX_MEMORIA2_Whispers",
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        }
+      ]
+    },
+    {
+      "map": "Zona_IX",
+      "audio_components": [
+        {
+          "actor": "/Game/Assets/Scenes/Zona_IX.Zona_IX:PersistentLevel.SFX_STREAM_5",
+          "component": "AkAudioComponent0",
+          "event": "/Game/Audio/SFX_STREAM.SFX_STREAM",
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_IX.Zona_IX:PersistentLevel.Leonr_PRE_5",
+          "component": "AkAudioComponent0",
+          "event": "/Game/Audio/Leonr_PRE.Leonr_PRE",
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_IX.Zona_IX:PersistentLevel.Teleport_BP0",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_IX.Zona_IX:PersistentLevel.Teleport_BP1",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_IX.Zona_IX:PersistentLevel.Teleport_BP2",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_IX.Zona_IX:PersistentLevel.MUSIC_memoria_3_2_07_2",
+          "component": "AkAudioComponent0",
+          "event": "/Game/Audio/MUSIC_memoria_3_2_07.MUSIC_memoria_3_2_07",
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        }
+      ]
+    },
+    {
+      "map": "Zona_Test",
+      "audio_components": [
+        {
+          "actor": "/Game/Assets/Scenes/Zona_Test.Zona_Test:PersistentLevel.Teleport_BP",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        },
+        {
+          "actor": "/Game/Assets/Scenes/Zona_Test.Zona_Test:PersistentLevel.Teleport_BP2",
+          "component": "Ak",
+          "event": null,
+          "event_name": "",
+          "attenuation_scaling_factor": 1.0
+        }
+      ]
+    }
+  ],
+  "quest_input_valid": true
+}

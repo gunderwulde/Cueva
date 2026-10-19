@@ -1,0 +1,46 @@
+{
+  "apk": "E:\\Unreal_Projects\\LaGarma - 5.8\\Builds\\Quest3-Wwise\\Android_ASTC\\LaGarma-arm64.apk",
+  "bytes": 1730934779,
+  "sha256": "1c24186b350752a702b4f4b4864d4b369f1c24818259b12a84135dd77f586d88",
+  "version_code": "4",
+  "version_name": "1.1.0",
+  "signature_verified": true,
+  "architecture": "arm64-v8a",
+  "package": "com.overlat.memoria",
+  "target_headsets": [
+    "Quest 3",
+    "Quest 3S"
+  ],
+  "vr_manifest_verified": true,
+  "embedded_game_data_bytes": 1601129978,
+  "cooked_maps": [
+    "Start",
+    "Menu",
+    "Valley",
+    "Zona_I",
+    "Zona_IV",
+    "Zona_IX",
+    "Zona_Test"
+  ],
+  "cooked_sequences": [
+    "Menu",
+    "Valley",
+    "Zona_I",
+    "Zona_IV_Animation",
+    "Zona_IX",
+    "Zona_Test"
+  ],
+  "audio_backend": "Wwise 2025.1.11.9262.4509",
+  "wwise_events": 63,
+  "wwise_banks": 128,
+  "wwise_media": 107,
+  "wwise_languages": [
+    "English(US)",
+    "Spanish"
+  ],
+  "wwise_packaged_files_match_android_generation": 235,
+  "wwise_packaging": "Shared additional files within pak",
+  "native_waves_in_container": 0,
+  "native_cues_in_container": 0,
+  "device_test": "Not performed; user requested APK preparation only"
+}

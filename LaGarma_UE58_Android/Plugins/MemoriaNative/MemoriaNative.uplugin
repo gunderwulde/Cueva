@@ -1,0 +1,39 @@
+{
+  "FileVersion": 3,
+  "Version": 2,
+  "VersionName": "1.1",
+  "FriendlyName": "Memoria OpenXR and Wwise Migration Support",
+  "Description": "Quest OpenXR controls, Wwise language selection, and project migration tools.",
+  "Category": "Memoria",
+  "EnabledByDefault": true,
+  "Modules": [
+    {
+      "Name": "MemoriaRuntime",
+      "Type": "Runtime",
+      "LoadingPhase": "PreDefault"
+    },
+    {
+      "Name": "MemoriaAudioEditor",
+      "Type": "Editor",
+      "LoadingPhase": "Default"
+    }
+  ],
+  "Plugins": [
+    {
+      "Name": "XRBase",
+      "Enabled": true
+    },
+    {
+      "Name": "Niagara",
+      "Enabled": true
+    },
+    {
+      "Enabled": true,
+      "Name": "EnhancedInput"
+    },
+    {
+      "Enabled": true,
+      "Name": "Wwise"
+    }
+  ]
+}

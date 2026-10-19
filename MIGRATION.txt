@@ -1,0 +1,93 @@
+MEMORIA - Current Wwise revision 1.1.0 (Android versionCode 4)
+
+Project: LaGarma_UE58_Android/LaGarma.uproject (Unreal 5.8.3)
+APK: Builds/Quest3-Wwise/Android_ASTC/LaGarma-arm64.apk
+Target: Meta Quest 3 / Quest 3S, Android ARM64, OpenXR, ASTC.
+
+Wwise 2025.1.11.9262 Authoring and SDK are installed in C:/Audiokinetic.
+Unreal integration 2025.1.11.9262.4509 is installed in the project's Plugins folder.
+The Wwise 2019 authoring project was migrated with its object GUIDs preserved.
+Windows and Android banks were generated successfully for English(US) and Spanish.
+The 63 original Unreal event assets now use real AkAudioEvent objects.
+All six used sequences contain real Wwise tracks: 43 event sections and 3 FADES
+curves, with authored time ranges and curve keys checked after a fresh reload.
+All 21 Blueprints and 7 level Blueprints compile; all 7 maps reload successfully.
+Wwise playback smoke check accepted effects and voices in both languages.
+The Android archive includes shared Wwise banks/media and excludes native fallback audio.
+Wwise bPackageAsBulkData=False avoids copying shared banks into individual event assets.
+NiniaTipo2_System2 also received the legacy skeletal-surface Niagara repair.
+MSAA 4x, controller selection rays/input, floor tracking and sequence assignments remain.
+
+The previous native-audio project is backed up at
+Backups/UE58_NativeAudio_1.0.2_BeforeWwise. Earlier APKs remain in their build folders.
+The MemoriaNative plugin retains OpenXR interaction and the language bridge;
+its old native audio implementation is unused by the migrated maps/sequences.
+
+Rebuild (use an explicit archive folder to preserve earlier APKs):
+  powershell -ExecutionPolicy Bypass -File .\Tools\BuildQuest3.ps1 -ArchiveDirectory .\Builds\Quest3-Wwise
+Requires Unreal 5.8, Android SDK 36, NDK 27.2.12479018 and JDK 21.
+Regenerate SoundBanks in Wwise for Windows and Android after authoring changes.
+Do not rerun the one-time native-audio conversion/bootstrap scripts on this project.
+
+Validation: Diagnostics/Wwise-validation.json, Wwise-assets-restored.json,
+Wwise-playback-smoke.json, Wwise-generate-banks-restored.log,
+Wwise-Quest-Package.log and Wwise-Quest-apk-validation.json.
+Physical headset audio audition and performance testing remain pending.
+
+--- Historical native-audio migration notes (superseded by Wwise above) ---
+
+MEMORIA - Stories of La Garma
+Migration workspace
+
+Original backup (Unreal 4.22.3): Backups\LaGarma_422_Original
+Repaired project (Unreal 4.22.3): La_Garma_Unreal_Project\LaGarma.uproject
+Migrated project (Unreal 5.8.3): LaGarma_UE58_Android\LaGarma.uproject
+Target: Meta Quest 3 / Quest 3S, Android ARM64, Vulkan ES3.1, OpenXR, ASTC.
+
+Rebuild:
+  powershell -ExecutionPolicy Bypass -File .\Tools\BuildQuest3.ps1
+  Requires Unreal Engine 5.8, Android SDK 36, NDK 27.2.12479018 and JDK 21.
+  Default engine path: E:\Epic\UE_5.8 (override with -EngineRoot).
+
+Audio:
+  Native Unreal SoundWaves, SoundCues and AudioComponents replace Wwise.
+  Includes English and Spanish sources, authored event delays, loops, volume/pitch,
+  Sequencer event sections and volume curves. Distance attenuation is imported.
+  The MemoriaNative plugin supplies runtime audio/Sequencer/OpenXR behavior.
+  Old Ak identifiers remain only to import existing serialized Blueprint pins.
+  Wwise authoring source is preserved for reference; the Android build has no Wwise SDK.
+  Mixer effects, reverberation, spread and exact perceptual matching need an audio review.
+
+Validation:
+  See Diagnostics\migration-status.json and the individual logs/reports.
+  Original: 21 Blueprint assets and 7 level Blueprints validated; Windows cook passed.
+  UE5.8: 21 Blueprint assets and 7 maps validated.
+  The packaged build includes Start, Menu, Valley, Zona_I, Zona_IV, Zona_IX and Zona_Test.
+  APK: Builds\Quest3\Android_ASTC\LaGarma-arm64.apk (1,491,904,098 bytes; game data embedded).
+  Remaining Niagara warnings are retained in the logs.
+  Headset testing, audio audition and performance profiling are pending.
+  The user requested preparation of the APK without connecting a physical headset.
+
+Tools\configure_58.py is a one-time bootstrap, not a rebuild command.
+Tools\repair_mobile_58.py repairs the mobile material paths and legacy Niagara variable.
+Tools\restore_attenuation_58.py restores the authored audio distance curves.
+The files in Tools\NativePlugin mirror the plugin source, excluding build products.
+Final Android cook: 0 errors, 10 warnings; no material shader compilation failures.
+APK signature, ARM64 architecture, Quest VR manifest, 7 maps, 110 waves and 84 cues verified.
+Install with Install_LaGarma-arm64.bat beside the APK, or use adb install -r on the APK.
+
+Revision Quest 1.0.1 (versionCode 2)
+APK: Builds\Quest3-r2\Android_ASTC\LaGarma-arm64.apk
+- MSAA 4x fixed in the Quest 3 and 3S device profiles.
+- Both trigger axes use Enhanced Input with a 0.5 actuation threshold.
+- Native visible selection ray uses the controller aim pose; the existing selector follows that pose.
+- Right controller is selected initially; the original hand switching behavior is preserved.
+- Stage floor reference and removal of the desktop fallback height offset after XR initializes.
+- OpenXR application focus is used for input/presence checks.
+- The first APK was confirmed working by the user; these changes need a new headset test.
+- The previous APK remains in Builds\Quest3.
+- Files before these changes are in Backups\QuestControls_Before.
+Validation: Diagnostics\Quest-r2-validation.json, Quest-r2-Package.log, Quest-r2-Package-final.log and Quest-r2-apk-validation.json.
+2026-10-19: Saved and verified Menu LevelSequenceActor -> /Game/Assets/Sequences/Menu.Menu. Restored missing LevelSequenceActor asset references in Valley, Zona_I, Zona_IV (Zona_IV_Animation), Zona_IX and Zona_Test. Reloaded Start and verified all six streamed sequence actors. Validation: Diagnostics/Sequence-references-repair.json, 0 commandlet errors/warnings. Original maps backed up in Backups/SequenceReferences_Before. These map changes are saved in the project; existing APKs have not been rebuilt for this change.
+
+2026-10-19 APK revision 1.0.2 (Android versionCode 3): Builds/Quest3-r3/Android_ASTC/LaGarma-arm64.apk. Includes restored sequence actor references and all previous Quest input/ray/floor/MSAA changes. UAT ExitCode=0; cook 0 errors / 10 known Niagara warnings. APK signature, ARM64, Quest manifest, seven maps, six sequences, 110 native waves, 84 cues and NativeVR input/ray assets verified. APK bytes: 1524023838; SHA256: 7bc90e64e1b2efc7bf69eb6827a73bc67da38faf8c8ad482b9ba8de11889b900. Device testing pending. Reports: Diagnostics/Quest-r3-apk-validation.json and Quest-r3-Package.log.

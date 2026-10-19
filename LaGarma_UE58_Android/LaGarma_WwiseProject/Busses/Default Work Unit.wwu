@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C59ADA9E-0E83-4EBB-86B9-10F7A3C3642F}" SchemaVersion="133">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{C59ADA9E-0E83-4EBB-86B9-10F7A3C3642F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<ValueList>
+								<Value>8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{9E394EF3-4CCF-4CF8-9542-F3AC2DB4B486}" WorkUnitID="{8F1BCE31-5080-4BE9-ADB4-A12239F79E64}"/>
+						</Reference>
+						
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Memorias" ID="{7174A187-5B58-42E7-8A0B-EB73DA74F092}"/>
+						<Bus Name="DX" ID="{380BB3FA-85D7-4AC8-80D4-D96C4246E5E7}">
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="Memorias" ID="{7174A187-5B58-42E7-8A0B-EB73DA74F092}"/>
+									<DuckingParam>
+										<Volume>-4</Volume>
+										<FadeInTime>0.300000011920929</FadeInTime>
+										<FadeOutTime>0.300000011920929</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
+						</Bus>
+						<Bus Name="NoPAUSE" ID="{87A31ABD-FC96-486E-817C-F9DA16AF126A}"/>
+					</ChildrenList><ObjectLists><ObjectList Name="Effects"><EffectSlot Name="" ID="{E6739359-EBF0-4AF4-82A3-08C5C5073E78}"><ReferenceList><Reference Name="Effect" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+							<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference></ReferenceList></EffectSlot></ObjectList></ObjectLists>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

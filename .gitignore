@@ -1,5 +1,57 @@
-Intermediate/
-Saved/Crashes/
-Saved/
-Binaries/
-.vs/
+# Unreal generated data (including plugin outputs)
+**/Binaries/
+**/Intermediate/
+**/Saved/
+**/DerivedDataCache/
+**/.vs/
+**/__pycache__/
+*.sln
+*.suo
+*.VC.db
+*.VC.opendb
+*.pdb
+*.prof
+*.apk
+*.aab
+*.obb
+*.keystore
+*.jks
+
+# Local migration backups, archives and the separate UE 4.22 checkout
+/Backups/
+/Builds/
+/La_Garma_Unreal_Project/
+/.codex/
+/.agents/
+/.aws/
+
+# Keep only portable validation/input reports, never raw logs or UI captures
+/Diagnostics/*
+!/Diagnostics/UE422-asset-audit.json
+!/Diagnostics/Wwise-restoration-audit.json
+!/Diagnostics/Wwise-audio-before.json
+!/Diagnostics/Wwise-assets-restored.json
+!/Diagnostics/Wwise-validation.json
+!/Diagnostics/Wwise-playback-smoke.json
+!/Diagnostics/Wwise-Quest-apk-validation.json
+!/Diagnostics/migration-status.json
+
+# Generated Android Java, cook order lists and old packaged builds
+/LaGarma_UE58_Android/Build/
+/LaGarma_UE58_Android/Exe/
+/LaGarma_UE58_Android/WindowsNoEditor/
+/LaGarma_UE58_Android/TempDefinitionFile.txt
+
+# Wwise sources/Originals are versioned; caches and personal settings are local
+**/.cache/
+**/.backup/
+**/GeneratedSoundBanks/
+*.validationcache
+*.wsettings
+/LaGarma_UE58_Android/Content/WwiseAudio/Windows/
+/LaGarma_UE58_Android/Plugins/Wwise/*.chm
+# Install the matching Wwise SDK/integration through Audiokinetic Launcher
+/LaGarma_UE58_Android/Plugins/WwiseSoundEngine/ThirdParty/
+
+# Per-machine configuration (including Android File Server credentials)
+**/Config/User*.ini

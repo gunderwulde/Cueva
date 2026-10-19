@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6BF8068F-A164-4110-87FD-69AE522C5063}" SchemaVersion="133">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{6BF8068F-A164-4110-87FD-69AE522C5063}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="SFX" ID="{B2381E38-41B5-460A-8983-5107BE2B225F}" ShortID="303577759">
+					<ChildrenList>
+						<Event Name="SFX_MEMORIA2_Whispers" ID="{56CDA4D4-0665-4AF5-A9F8-721CB743892D}">
+							<ChildrenList>
+								<Action Name="" ID="{5973C718-B582-4662-8661-60DE6DB67113}" ShortID="401805735">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Memoria2" ID="{346C5D9B-17BB-46FC-B368-A5C628482F99}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SFX_FUEGOS" ID="{4A0574A1-D6A3-4B82-AB4E-5A36B29387B8}">
+							<ChildrenList>
+								<Action Name="" ID="{1ADB984D-8A21-409C-A821-FB5E90BE21C8}" ShortID="859168874">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FUEGOS" ID="{E219074A-7C0F-45EB-A84E-BC7097158476}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SFX_AMB_LOOP_IN" ID="{4B90435D-CD0C-4E67-9902-2B5C744A0373}">
+							<ChildrenList>
+								<Action Name="" ID="{5CF0B2DA-C3BA-4B49-92F0-44B87BADF7A2}" ShortID="1040467474">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB_LOOP_IN" ID="{66C3D0CD-AE84-485F-ACEF-A3A3B50B7CF6}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SFX_CAVE_Door" ID="{C44E25AD-43F9-4713-9B23-F3DFF9CFB3CB}">
+							<ChildrenList>
+								<Action Name="" ID="{173A5F71-E968-4CAB-9496-DA07B8549B6F}" ShortID="330436225">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CAVE_DOOR" ID="{1EA0DD28-C6B4-4967-8878-680F4457BBDD}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SFX_SHELTER_IN" ID="{367318E1-37F4-4A61-9DD6-58B02E2B7963}">
+							<ChildrenList>
+								<Action Name="" ID="{4B88606D-2D66-4723-9696-3DB7C5A2AC5E}" ShortID="223963845">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SHELTER_IN" ID="{9A185EBC-6911-4626-9AA2-179C2121B9EF}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SFX_STUART_AMB" ID="{F3A4A005-F8F0-4FAB-AED6-1DE5377E7D48}">
+							<ChildrenList>
+								<Action Name="" ID="{5BD87541-8AD7-4808-A0E2-07EBC8826A85}" ShortID="657488322">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="StuartAMB" ID="{AC0050D3-58FA-4DD1-816B-2F7B01EA1418}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C0E86240-22C6-4CDF-8212-67594A845B60}" ShortID="238686448">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="24"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="StuartAMB" ID="{AC0050D3-58FA-4DD1-816B-2F7B01EA1418}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SFX_MEMORIA_Leon" ID="{EAF6A015-9A73-469E-AEA5-92031C49D2CE}">
+							<ChildrenList>
+								<Action Name="" ID="{56CF3368-5826-43C4-8612-6C1884725D0B}" ShortID="252119387">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MemoriaLeon" ID="{714A0716-6D52-4398-92D3-6F905EBF327D}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8097B86A-7137-4869-B177-8731574775BB}" ShortID="77206954">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SHELTER_IN" ID="{9A185EBC-6911-4626-9AA2-179C2121B9EF}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SFX_CABAN_A_IN" ID="{2C1B1D1E-1079-4019-B052-394EA3D89BB2}">
+							<ChildrenList>
+								<Action Name="" ID="{99FAD907-BF3C-4F5C-9834-6318C1624C03}" ShortID="140615941">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CABAÑA_IN" ID="{2DE9297D-35D9-4B4F-AC18-D1979B5649C2}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SFX_MEMORIA0_FX" ID="{4EC12682-E0E8-43B3-9140-8F76690DB1E0}">
+							<ChildrenList>
+								<Action Name="" ID="{D97E7C4D-AAFC-49A6-B3DE-1CA6A826814D}" ShortID="329924006">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Memoria0" ID="{5FA32784-F7CA-4E35-87F7-2440695F3A81}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SFX_MEMORIA1_Whispers" ID="{E8E478A6-9D88-47F2-A7E8-1ED130D63F06}">
+							<ChildrenList>
+								<Action Name="" ID="{394743A5-D478-4AAC-80DF-546579D42A5D}" ShortID="63596454">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Memoria1" ID="{9E89A114-FB9C-4DBF-9EC9-9EC580898614}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SFX_STREAM" ID="{6F8A291E-8FF5-4F66-BE8E-A5727A3BB60B}">
+							<ChildrenList>
+								<Action Name="" ID="{9E29D3F1-19B1-4ED3-A0FB-789FC7CE9A16}" ShortID="265396335">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="STREAM" ID="{16F03FD4-C30B-4C8A-812E-634F5AF17320}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SFX_FINAL_Whispers" ID="{C97EFB1D-1ED9-4799-B0F4-E6F417C506F9}">
+							<ChildrenList>
+								<Action Name="" ID="{AFCC8644-8E91-4E06-840B-780063CB4D4B}" ShortID="56371343">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FINAL_Whispers" ID="{CA8D9A3D-98D0-4BAC-8EDA-5888F098572E}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SFX_EXT_AMB" ID="{2D276360-F09D-45F6-81AD-593DCF1CB731}">
+							<ChildrenList>
+								<Action Name="" ID="{1159FAAC-7DD2-4960-AEE6-396DCFE751C1}" ShortID="559335377">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EXTERIOR" ID="{1166392F-603A-4ECC-9982-C5467C499024}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DEER" ID="{AC0F761D-0E62-4AA8-BC81-A190BD8D044F}">
+							<ChildrenList>
+								<Action Name="" ID="{D2F52D10-E952-436A-9EFC-2186BB02115C}" ShortID="749798919">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DEER" ID="{D6B8F6C9-4721-4B98-A5E4-0BAE6486E6EE}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Leonr_PRE" ID="{9A418501-3A5A-4FDA-964E-38F252D218E4}">
+							<ChildrenList>
+								<Action Name="" ID="{7DC66C60-0D23-4486-8183-CE6AB2801F3F}" ShortID="795781398">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Leonr_PRE" ID="{BD2300B6-5AEA-4FB5-864C-123D0C2323DC}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SFX_Start" ID="{94CCE780-1C78-4827-9FA3-B73B17AFDD7A}">
+							<ChildrenList>
+								<Action Name="" ID="{9F1455CB-A4A8-4E25-8062-AEAD4E620815}" ShortID="977857701">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LOOP" ID="{529B9CFD-B602-47FE-85BA-ED22F0BF21CA}" WorkUnitID="{1FF67512-4BE9-4133-B380-82DD4AB8EB8A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A9552CF6-EDB3-496C-8253-53E33B31622F}" ShortID="691537861">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="3.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LOOP" ID="{529B9CFD-B602-47FE-85BA-ED22F0BF21CA}" WorkUnitID="{1FF67512-4BE9-4133-B380-82DD4AB8EB8A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="DX" ID="{70C55DDE-E614-4819-9FC8-90E914F112AD}" ShortID="570600368">
+					<ChildrenList>
+						<Event Name="DX_B_1" ID="{1BEA7FCB-3801-4FDC-915D-7FC9C4B573E8}">
+							<ChildrenList>
+								<Action Name="" ID="{60C3DDBE-6971-4B57-9D28-6BB5D64D7747}" ShortID="965231623">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_B_1" ID="{7C113C77-418C-4B88-AA8E-FBB51650ED67}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_B_2" ID="{1612A9BE-89CC-4955-8741-4477B3600747}">
+							<ChildrenList>
+								<Action Name="" ID="{1A9E2247-F7A7-4049-B230-EE756ACD4A68}" ShortID="406323575">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_B_2" ID="{47DDF0A8-9EFF-44C3-8694-5AAB0BA33BA2}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_B_3" ID="{E34ECDAC-71FA-457F-9DB0-7058EC4FF1ED}">
+							<ChildrenList>
+								<Action Name="" ID="{D060968E-222F-4978-A601-5F7C1363F7E3}" ShortID="874415782">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_B_3" ID="{48919395-70E5-40E7-8F02-E1CDCA59400C}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_B_4" ID="{07D59699-613C-4D65-BC30-27D2142A25C0}">
+							<ChildrenList>
+								<Action Name="" ID="{B87EEAAC-9A50-47E4-86D5-FD69C61B55AE}" ShortID="30893024">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_B_4" ID="{85FA1B96-FC7E-4D67-B1DB-18954E18BBB5}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_B_5" ID="{68B3A96B-B4EB-468F-A01A-AA407CCCBF1C}">
+							<ChildrenList>
+								<Action Name="" ID="{89B822B3-D4A8-446E-B14E-83348BD222CB}" ShortID="551125058">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_B_5" ID="{6289400B-9ED0-456F-ABF4-512419AC840B}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_B_6" ID="{25108D54-B9A8-455A-9C58-D679F96FCB47}">
+							<ChildrenList>
+								<Action Name="" ID="{871EC64E-8B83-4FA8-BD56-8967EA0FBBC8}" ShortID="647823234">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_B_6" ID="{602A87C9-50F6-4C7C-A002-C7067F41AAB4}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_B_7" ID="{A26C7603-BFF2-45F4-B491-98D0D46FFC50}">
+							<ChildrenList>
+								<Action Name="" ID="{2B098A0F-9AA0-49F0-A335-B39C19929915}" ShortID="282587150">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_B_7" ID="{33509348-0B6A-45F7-BBA7-3F94FBA284D6}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_B_8" ID="{CE9DF993-FD94-4A97-A749-C735BD298A0B}">
+							<ChildrenList>
+								<Action Name="" ID="{7DC3D5A6-2AD7-4B66-9AAF-4420874823AE}" ShortID="352472823">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_B_8" ID="{E96A9E40-D295-4AAC-ABF2-26F771E94A92}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_B_9" ID="{11148282-6560-461A-953D-91BCD8DDA1D2}">
+							<ChildrenList>
+								<Action Name="" ID="{10D8CC52-8EEA-4B40-B6FE-5519A8F9ED3C}" ShortID="765188062">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_B_9" ID="{91CA78DB-9488-4CFE-97BD-740AB4DA6569}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_B_10" ID="{0B4FEED4-D9E4-43B0-947B-D868E693AC21}">
+							<ChildrenList>
+								<Action Name="" ID="{58058998-0F7B-4013-AD68-A58001C05C98}" ShortID="741947293">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_B_10" ID="{38805013-C3E9-4975-83A8-41DDDFCF00A1}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_B_11" ID="{FA6DAA27-27A4-45D0-877C-5534F434CBC6}">
+							<ChildrenList>
+								<Action Name="" ID="{118270E0-3D3E-446B-8BCC-18005FA886C4}" ShortID="16722882">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_B_11" ID="{2ED93345-AD69-4EBD-82E9-1BF5EC09F609}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_B_12" ID="{B365A657-37F1-4E12-84DA-F0232A57F1F4}">
+							<ChildrenList>
+								<Action Name="" ID="{104FF53A-42BE-4C34-831B-DF911B364C77}" ShortID="852373457">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_B_12" ID="{0D9CC784-CCEB-4C5B-91E0-6F7B88733DB7}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_B_13" ID="{6A10702F-44F7-49A4-8E41-325ACBED460A}">
+							<ChildrenList>
+								<Action Name="" ID="{CF9D0569-3F8F-4BE6-85E1-85E88B4375A6}" ShortID="92737987">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_B_13" ID="{CD2738CA-34A8-46F6-A283-B2FCE2BE0556}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_B_14" ID="{2A6BE946-79AF-463F-9A5C-2F2767E33071}">
+							<ChildrenList>
+								<Action Name="" ID="{0105D4AE-BD6E-486C-8313-0A6DF625B44C}" ShortID="941631395">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_B_14" ID="{5DD35C80-39F4-4E22-87FE-81566C4856F3}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_B_15" ID="{CE17EEA2-7384-4B5E-B964-2309DC94A2D1}">
+							<ChildrenList>
+								<Action Name="" ID="{979990EE-53F9-4F92-895B-7CE60A86886E}" ShortID="360393571">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_B_15" ID="{2EEE8F2E-32DC-4E0A-BC0C-A2539B93740D}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_B_16" ID="{AF746349-6B9B-4DF1-8AD3-4D768FD3324D}">
+							<ChildrenList>
+								<Action Name="" ID="{45DAF4EF-8D70-46F1-A097-4FA1584A35A5}" ShortID="764209676">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_B_16" ID="{5BB8B546-8259-48FA-8DE0-ADAB13CBFB30}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_G_1" ID="{087E2A35-A593-4059-AEB8-60371BACAFDF}">
+							<ChildrenList>
+								<Action Name="" ID="{02278701-4883-4942-AB64-AA9BD24D4A22}" ShortID="711291162">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_G_1" ID="{0A257FA3-6C48-47EF-916F-BF534E3829CB}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_G_2" ID="{41CE8441-9978-40A7-95FC-7E642F278B88}">
+							<ChildrenList>
+								<Action Name="" ID="{0C37245E-66E4-43CE-817C-922B049AE5DE}" ShortID="78217215">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_G_2" ID="{6D8BB8F6-3146-4D78-8AD1-3C33520FD4F9}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_G_3" ID="{0EEB9651-DB25-4F40-A39B-E3670440A43C}">
+							<ChildrenList>
+								<Action Name="" ID="{431616AC-AD1F-44F0-8F33-DC1E0E6F00B8}" ShortID="72114470">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_G_3" ID="{8105BDEC-D9E3-4BF1-9C17-EC4CC885B66C}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_G_4" ID="{C333E364-3468-4BB2-896B-27C76BE4A287}">
+							<ChildrenList>
+								<Action Name="" ID="{6275B5E7-12B4-4DF0-9199-235AE68ACE1E}" ShortID="146885875">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_G_4" ID="{D81FE0DB-1C98-43AE-BC2B-FA2C06DF4D0F}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_G_5" ID="{2986121D-0338-42F9-9AE0-FDEBA57C56A6}">
+							<ChildrenList>
+								<Action Name="" ID="{42E27FD1-F9AD-4D60-9D2E-DF054706C707}" ShortID="410322612">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_G_5" ID="{E41F1048-38E4-46BC-A45F-9624C3ECA3B6}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_G_6" ID="{55FC9BF7-FA18-4C12-AFDB-6DD59C72D50F}">
+							<ChildrenList>
+								<Action Name="" ID="{CFD519B3-C7A4-4898-951F-30D19C008148}" ShortID="177170290">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_G_6" ID="{60D8764A-AC63-4EBF-ABF8-50ED1E7EECAB}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_G_7" ID="{E6F41EDC-DB40-4CD4-9A66-B74221D1CC98}">
+							<ChildrenList>
+								<Action Name="" ID="{95556DD7-A35D-4744-9FB9-8EEF2B4E8ED3}" ShortID="216917995">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_G_7" ID="{95954A29-999F-43E7-9E65-2A421D8E9553}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_G_8" ID="{38CED75F-01DF-45D8-8FA1-0FAD8EA125AE}">
+							<ChildrenList>
+								<Action Name="" ID="{0CD28C80-3D34-4A83-8EAC-DCFCE75435A1}" ShortID="335635868">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_G_8" ID="{1DE3E2ED-5387-44A0-B611-1483C61886E2}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_G_9" ID="{C68C2B7A-A556-4BEC-AFA5-E9382B38469C}">
+							<ChildrenList>
+								<Action Name="" ID="{5D1958F0-AF32-4FEA-8861-493A2CCA7B04}" ShortID="1020096983">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_G_9" ID="{B633C02F-16D6-4EF1-84CE-3F625E84C99C}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_G_10" ID="{69361EA3-FB82-4A38-B2C2-976F379FF897}">
+							<ChildrenList>
+								<Action Name="" ID="{1ECE3B55-FEE3-43C8-A5B2-71D0D1870DB2}" ShortID="1364184">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_G_10" ID="{7F6686E4-EA55-41F8-9CE3-D78E4DC44D45}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_G_11" ID="{4C837AF4-8F91-42E8-8CC0-19CAA4469887}">
+							<ChildrenList>
+								<Action Name="" ID="{AB8C64C0-2F56-443B-BDC9-A1F67D46D138}" ShortID="565207016">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_G_11" ID="{54B04CD2-C3D8-4891-A211-044F63F309E3}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_G_12" ID="{9509546F-2828-4E08-ACDA-C43259CD600E}">
+							<ChildrenList>
+								<Action Name="" ID="{82C8976F-0A32-4B40-BC25-D5E796A4AEE9}" ShortID="1019217808">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_G_12" ID="{36B08C9D-3358-4169-837C-97AE4C289556}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DX_G_13" ID="{921ECBE3-FDD0-4D5E-93E1-AFCA9F26183A}">
+							<ChildrenList>
+								<Action Name="" ID="{60F32816-BCBC-403E-BCDE-CFF30313674B}" ShortID="949424716">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_VO_G_13" ID="{E1FE5256-E607-4111-8AFC-7385E469F63E}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SFX_STUART_CLEAN" ID="{FCBC467C-EB7B-4ED8-98A2-E9E63AC68302}">
+							<ChildrenList>
+								<Action Name="" ID="{8689ABD9-86FD-43A5-9997-FF27724FB72B}" ShortID="657387431">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Stuart_VO" ID="{417237C4-F0BE-4C8C-A4EB-00A7E88A4681}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Unused" ID="{F0C2C00A-B362-4127-8640-1A2547CCB558}" ShortID="771227950">
+					<ChildrenList>
+						<Event Name="A_SFX_Fire_1" ID="{80C07EEB-D32F-4C89-9662-9404AFC5D06E}">
+							<ChildrenList>
+								<Action Name="" ID="{08E39F7F-CD58-4765-9EAF-BFBEF6BCF039}" ShortID="467168145">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_SFX_Fire_1" ID="{01849006-E8D8-45B5-8016-90151E10FF7B}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="A_SFX_Fire_2" ID="{C50B8855-8D09-4F03-A8E4-A9273B9ACC71}">
+							<ChildrenList>
+								<Action Name="" ID="{941D0614-FE7E-4585-BCEE-BFFDC2B14AA7}" ShortID="627609553">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_SFX_Fire_2" ID="{7ED87BF4-DD9B-4DAC-9BDE-A37EA1C490E7}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="A_SFX_Water_1" ID="{3B2269FB-DF46-45A5-B3B2-CFCD45792B85}">
+							<ChildrenList>
+								<Action Name="" ID="{6CF796CA-5BE1-4271-880F-AC08B2B7BDB4}" ShortID="784143801">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_SFX_Water_1" ID="{45152AF0-0CF3-4131-8DE1-9409235A6C50}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="A_SFX_Drips" ID="{0715DBC2-B2CF-4717-96E0-08CFD8A624A1}">
+							<ChildrenList>
+								<Action Name="" ID="{0D648A3B-8CBB-4109-B4B0-710D379E1AB1}" ShortID="214493165">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GARMA_SFX_Drips" ID="{38183491-D1BB-42F6-8A94-53B0741B6DD0}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SFX_CAVE_Wind" ID="{AF4652D1-3C1B-488E-AC38-7EAFD78C2E8D}">
+							<ChildrenList>
+								<Action Name="" ID="{47A5CF1F-5AFE-4E02-8288-23C3EF03848C}" ShortID="46412933">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CAVE_Wind" ID="{6C5C8E79-FCE4-4A38-B6C9-7901DAFCD91F}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SFX_CAVE_Collapse" ID="{0B1C87AB-EC32-49D7-9A23-72857D31E121}">
+							<ChildrenList>
+								<Action Name="" ID="{076BA88F-8B78-4346-BFEA-23DB125322BC}" ShortID="1046435539">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CAVE_Collapse" ID="{8DD23FEF-1883-4591-AF3D-A9D25D5E5448}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="HotspotSTOP" ID="{14F7F2B7-30EB-428A-988E-49B21DDFDD25}">
+							<ChildrenList>
+								<Action Name="" ID="{37532EDB-8FF7-4D3F-9FE4-FB6EC81C0019}" ShortID="560980853">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Hotspot" ID="{518933C3-10DF-4FC2-B983-4516804C218E}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Hotspot" ID="{441B3E59-75EC-4FCA-B075-D8D7F87A808A}">
+							<ChildrenList>
+								<Action Name="" ID="{3007840B-7E94-42D6-A542-1E97FB5B3EE8}" ShortID="438012842">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Hotspot" ID="{518933C3-10DF-4FC2-B983-4516804C218E}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="MUSIC" ID="{0294858D-A595-4A4B-9E04-0AE1B786A35E}" ShortID="437776484">
+					<ChildrenList>
+						<Event Name="MUSIC_LoopIN" ID="{E81F7C85-CA59-4A65-AFC3-9851CC1A21BC}">
+							<ChildrenList>
+								<Action Name="" ID="{902B9304-E9FE-49E0-939B-090E22A67E01}" ShortID="446382135">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LOOP" ID="{529B9CFD-B602-47FE-85BA-ED22F0BF21CA}" WorkUnitID="{1FF67512-4BE9-4133-B380-82DD4AB8EB8A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MUSIC_memoria_1_2_07" ID="{63ACE897-05A5-4544-8E97-6D2ACC314E11}">
+							<ChildrenList>
+								<Action Name="" ID="{B1522134-BA99-4660-AB31-B614D84AFA12}" ShortID="683289850">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MEM memoria 1 2_07" ID="{A6464732-B41F-4D01-BBD4-34C83D385E89}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{34785AFB-067D-4E59-8D19-5CD6372BA387}" ShortID="966956653">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LOOP" ID="{529B9CFD-B602-47FE-85BA-ED22F0BF21CA}" WorkUnitID="{1FF67512-4BE9-4133-B380-82DD4AB8EB8A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MUSIC_memoria_3_2_07" ID="{91C3BDCF-115D-4A77-9DE5-31A9666DF8D2}">
+							<ChildrenList>
+								<Action Name="" ID="{81543BE3-5601-41CD-9AC7-F06CDD49D86D}" ShortID="848542429">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MEM memoria 3 2_07" ID="{9BBA9DF5-DAEE-4B85-9387-9F0A1617C546}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8CFE336A-ACF9-46D4-B144-15136381D968}" ShortID="426114395">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LOOP" ID="{529B9CFD-B602-47FE-85BA-ED22F0BF21CA}" WorkUnitID="{1FF67512-4BE9-4133-B380-82DD4AB8EB8A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MUSIC_memoria_2_2_07" ID="{BB4F655B-BC54-47CF-B528-826F1D28CC47}">
+							<ChildrenList>
+								<Action Name="" ID="{232F5431-C8FB-4344-BDB1-DD448F4BC54E}" ShortID="481741588">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MEM memoria 2 2_07" ID="{AEE32783-A0A0-406F-8D79-36163EB95141}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{07A27C7B-FD22-427A-91A9-2A1612D7B653}" ShortID="89941402">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LOOP" ID="{529B9CFD-B602-47FE-85BA-ED22F0BF21CA}" WorkUnitID="{1FF67512-4BE9-4133-B380-82DD4AB8EB8A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MUSIC_intro_2_07" ID="{8AF7231B-8AF1-48AC-8B9C-5B3711879070}">
+							<ChildrenList>
+								<Action Name="" ID="{B52F43AC-A225-4598-82DE-F71FEBC606E7}" ShortID="359534785">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MEM intro 2_07" ID="{CD38E0ED-BA81-4898-ACA2-B6593D610A7D}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5A734C67-CA8B-47A7-B1F0-79DDEF2751C3}" ShortID="454696359">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LOOP" ID="{529B9CFD-B602-47FE-85BA-ED22F0BF21CA}" WorkUnitID="{1FF67512-4BE9-4133-B380-82DD4AB8EB8A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MUSIC_LoopOUT" ID="{AB0EB978-2288-41C6-B8C4-DBC9696DC47E}">
+							<ChildrenList>
+								<Action Name="" ID="{14C69B69-D453-445A-A003-B347ECBC56C0}" ShortID="936879036">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LOOP" ID="{529B9CFD-B602-47FE-85BA-ED22F0BF21CA}" WorkUnitID="{1FF67512-4BE9-4133-B380-82DD4AB8EB8A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MUSIC_LOOP2" ID="{3364DF8D-0B8A-43CE-8A03-65F656D518AB}">
+							<ChildrenList>
+								<Action Name="" ID="{D2A19613-15FC-4DA2-8B6A-A7A66E1BBEA9}" ShortID="340887231">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LOOP" ID="{529B9CFD-B602-47FE-85BA-ED22F0BF21CA}" WorkUnitID="{1FF67512-4BE9-4133-B380-82DD4AB8EB8A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MUSIC_MEM_intro_PT2" ID="{3728A740-1D9C-4A56-A8CC-5DA4F87A4F0B}">
+							<ChildrenList>
+								<Action Name="" ID="{8D52E7AA-D95F-422E-84ED-5E1F2CFDDB01}" ShortID="694490079">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MEM intro 2_01" ID="{3CCEC733-9D77-495F-B803-136F5919413F}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{3CA816B1-E0B5-4781-87F4-418474318CB9}" ShortID="152407238">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LOOP" ID="{529B9CFD-B602-47FE-85BA-ED22F0BF21CA}" WorkUnitID="{1FF67512-4BE9-4133-B380-82DD4AB8EB8A}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="FinalMusicStop" ID="{8B536588-42F6-4AF6-8A05-3E6344E554C7}">
+							<ChildrenList>
+								<Action Name="" ID="{211611ED-72CE-40E3-8E43-4A4A6FBA3AC8}" ShortID="330397430">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="4"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MEM memoria 3 2_07" ID="{9BBA9DF5-DAEE-4B85-9387-9F0A1617C546}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="TeleportIN" ID="{EF83DFF9-30F2-4B70-983B-F509DA41A7C0}">
+							<ChildrenList>
+								<Action Name="" ID="{0AC475B9-3C63-4AC8-87AB-5391AE70EA88}" ShortID="146890538">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Teleport" ID="{CCFDB5A3-0625-47EA-8758-3915C6028978}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="TeleportOUT" ID="{E1C0C172-4638-4A15-B3EB-FBB47258EADA}">
+							<ChildrenList>
+								<Action Name="" ID="{D1D6CA58-14FB-4A21-B99D-41A4D7EEC22F}" ShortID="516953332">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Teleport" ID="{CCFDB5A3-0625-47EA-8758-3915C6028978}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="STOP_ALL" ID="{6CF4B99B-A584-4BE2-A567-728467475BAD}">
+					<ChildrenList>
+						<Action Name="" ID="{B2214831-4BBD-4ADD-A612-7088B4C9C820}" ShortID="678077115">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+							<ChildrenList>
+								<EventActionException Name="" ID="{AC94D929-6AEE-486B-96BB-1C13DE5E1382}">
+									<ReferenceList/>
+								</EventActionException>
+							</ChildrenList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="RESUME" ID="{952D9FB7-22D0-4C71-A7A9-58D4E7E765B7}"/>
+				<Event Name="LOADING_IN" ID="{403BD57C-FAFB-497C-8F53-1B7DD2725087}">
+					<ChildrenList>
+						<Action Name="" ID="{A081565F-F16F-442F-8678-6C33FC89EBB7}" ShortID="923433363">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LoadingAudio" ID="{48749E32-73C9-4DE2-A4E9-7B42CCC05A1F}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="LOADING_OUT" ID="{9258E6F1-3B08-40CC-B539-88C99DDB5FF7}">
+					<ChildrenList>
+						<Action Name="" ID="{BF5B4436-898B-49C3-A7AD-71E63B3264B5}" ShortID="492292638">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LoadingAudio" ID="{48749E32-73C9-4DE2-A4E9-7B42CCC05A1F}" WorkUnitID="{5F5D1842-E80F-42E9-8D87-51211A3E5787}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

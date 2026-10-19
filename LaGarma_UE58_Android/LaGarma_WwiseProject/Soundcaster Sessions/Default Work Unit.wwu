@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B9221CE5-4839-4418-A1DF-228C7F40A171}" SchemaVersion="133">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{B9221CE5-4839-4418-A1DF-228C7F40A171}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Sesion" ID="{4E60861D-42A5-47BC-B1E0-C81B44184D32}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="SFX_STUART_AMB" ID="{F3A4A005-F8F0-4FAB-AED6-1DE5377E7D48}" WorkUnitID="{6BF8068F-A164-4110-87FD-69AE522C5063}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="LOADING_IN" ID="{403BD57C-FAFB-497C-8F53-1B7DD2725087}" WorkUnitID="{6BF8068F-A164-4110-87FD-69AE522C5063}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUSIC_LoopOUT" ID="{AB0EB978-2288-41C6-B8C4-DBC9696DC47E}" WorkUnitID="{6BF8068F-A164-4110-87FD-69AE522C5063}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="LOADING_OUT" ID="{9258E6F1-3B08-40CC-B539-88C99DDB5FF7}" WorkUnitID="{6BF8068F-A164-4110-87FD-69AE522C5063}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUSIC_LoopIN" ID="{E81F7C85-CA59-4A65-AFC3-9851CC1A21BC}" WorkUnitID="{6BF8068F-A164-4110-87FD-69AE522C5063}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

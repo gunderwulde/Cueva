@@ -1,0 +1,12 @@
+Event	ID	Name			Wwise Object Path	Notes
+	516527011	A_SFX_Drips			\Default Work Unit\A_SFX_Drips	
+	1197063085	A_SFX_Fire_1			\Default Work Unit\A_SFX_Fire_1	
+	1197063086	A_SFX_Fire_2			\Default Work Unit\A_SFX_Fire_2	
+	3233176818	A_SFX_Water_1			\Default Work Unit\A_SFX_Water_1	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	215580823	GARMA_SFX_Drips	C:\Projects\LaGarma\LaGarma_WwiseProject\.cache\Windows\SFX\GARMA_SFX_Drips_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\GARMA_SFX_Drips		5356844
+	230230964	GARMA_SFX_Fire_2	C:\Projects\LaGarma\LaGarma_WwiseProject\.cache\Windows\SFX\GARMA_SFX_Fire_2_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\GARMA_SFX_Fire_2		16140664
+	407544488	GARMA_SFX_Water_1	C:\Projects\LaGarma\LaGarma_WwiseProject\.cache\Windows\SFX\GARMA_SFX_Water_1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\GARMA_SFX_Water_1		16034968
+	645897979	GARMA_SFX_Fire_1	C:\Projects\LaGarma\LaGarma_WwiseProject\.cache\Windows\SFX\GARMA_SFX_Fire_1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\GARMA_SFX_Fire_1		16140664
+

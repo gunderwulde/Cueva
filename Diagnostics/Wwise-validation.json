@@ -1,0 +1,303 @@
+{
+  "wwise_version": "2025.1.11.9262.4509",
+  "events": [
+    {
+      "event": "/Game/Audio/A_SFX_Drips.A_SFX_Drips",
+      "short_id": 516527011
+    },
+    {
+      "event": "/Game/Audio/A_SFX_Fire_1.A_SFX_Fire_1",
+      "short_id": 1197063085
+    },
+    {
+      "event": "/Game/Audio/A_SFX_Fire_2.A_SFX_Fire_2",
+      "short_id": 1197063086
+    },
+    {
+      "event": "/Game/Audio/A_SFX_Water_1.A_SFX_Water_1",
+      "short_id": 3233176818
+    },
+    {
+      "event": "/Game/Audio/DEER.DEER",
+      "short_id": 1976939193
+    },
+    {
+      "event": "/Game/Audio/DX_B_1.DX_B_1",
+      "short_id": 1479091870
+    },
+    {
+      "event": "/Game/Audio/DX_B_10.DX_B_10",
+      "short_id": 1724369546
+    },
+    {
+      "event": "/Game/Audio/DX_B_11.DX_B_11",
+      "short_id": 1724369547
+    },
+    {
+      "event": "/Game/Audio/DX_B_12.DX_B_12",
+      "short_id": 1724369544
+    },
+    {
+      "event": "/Game/Audio/DX_B_13.DX_B_13",
+      "short_id": 1724369545
+    },
+    {
+      "event": "/Game/Audio/DX_B_14.DX_B_14",
+      "short_id": 1724369550
+    },
+    {
+      "event": "/Game/Audio/DX_B_15.DX_B_15",
+      "short_id": 1724369551
+    },
+    {
+      "event": "/Game/Audio/DX_B_16.DX_B_16",
+      "short_id": 1724369548
+    },
+    {
+      "event": "/Game/Audio/DX_B_2.DX_B_2",
+      "short_id": 1479091869
+    },
+    {
+      "event": "/Game/Audio/DX_B_3.DX_B_3",
+      "short_id": 1479091868
+    },
+    {
+      "event": "/Game/Audio/DX_B_4.DX_B_4",
+      "short_id": 1479091867
+    },
+    {
+      "event": "/Game/Audio/DX_B_5.DX_B_5",
+      "short_id": 1479091866
+    },
+    {
+      "event": "/Game/Audio/DX_B_6.DX_B_6",
+      "short_id": 1479091865
+    },
+    {
+      "event": "/Game/Audio/DX_B_7.DX_B_7",
+      "short_id": 1479091864
+    },
+    {
+      "event": "/Game/Audio/DX_B_8.DX_B_8",
+      "short_id": 1479091863
+    },
+    {
+      "event": "/Game/Audio/DX_B_9.DX_B_9",
+      "short_id": 1479091862
+    },
+    {
+      "event": "/Game/Audio/FrasesGameplay/DX_G_1.DX_G_1",
+      "short_id": 1478547419
+    },
+    {
+      "event": "/Game/Audio/FrasesGameplay/DX_G_10.DX_G_10",
+      "short_id": 2528366065
+    },
+    {
+      "event": "/Game/Audio/FrasesGameplay/DX_G_11.DX_G_11",
+      "short_id": 2528366064
+    },
+    {
+      "event": "/Game/Audio/FrasesGameplay/DX_G_12.DX_G_12",
+      "short_id": 2528366067
+    },
+    {
+      "event": "/Game/Audio/FrasesGameplay/DX_G_13.DX_G_13",
+      "short_id": 2528366066
+    },
+    {
+      "event": "/Game/Audio/FrasesGameplay/DX_G_2.DX_G_2",
+      "short_id": 1478547416
+    },
+    {
+      "event": "/Game/Audio/FrasesGameplay/DX_G_3.DX_G_3",
+      "short_id": 1478547417
+    },
+    {
+      "event": "/Game/Audio/FrasesGameplay/DX_G_4.DX_G_4",
+      "short_id": 1478547422
+    },
+    {
+      "event": "/Game/Audio/FrasesGameplay/DX_G_5.DX_G_5",
+      "short_id": 1478547423
+    },
+    {
+      "event": "/Game/Audio/FrasesGameplay/DX_G_6.DX_G_6",
+      "short_id": 1478547420
+    },
+    {
+      "event": "/Game/Audio/FrasesGameplay/DX_G_7.DX_G_7",
+      "short_id": 1478547421
+    },
+    {
+      "event": "/Game/Audio/FrasesGameplay/DX_G_8.DX_G_8",
+      "short_id": 1478547410
+    },
+    {
+      "event": "/Game/Audio/FrasesGameplay/DX_G_9.DX_G_9",
+      "short_id": 1478547411
+    },
+    {
+      "event": "/Game/Audio/FinalMusicStop.FinalMusicStop",
+      "short_id": 1266760052
+    },
+    {
+      "event": "/Game/Audio/Hotspot.Hotspot",
+      "short_id": 2774644282
+    },
+    {
+      "event": "/Game/Audio/LOADING_IN.LOADING_IN",
+      "short_id": 270586343
+    },
+    {
+      "event": "/Game/Audio/LOADING_OUT.LOADING_OUT",
+      "short_id": 1672418138
+    },
+    {
+      "event": "/Game/Audio/Leonr_PRE.Leonr_PRE",
+      "short_id": 227153381
+    },
+    {
+      "event": "/Game/Audio/MUSIC_LoopIN.MUSIC_LoopIN",
+      "short_id": 3339243874
+    },
+    {
+      "event": "/Game/Audio/MUSIC_LoopOUT.MUSIC_LoopOUT",
+      "short_id": 3218841117
+    },
+    {
+      "event": "/Game/Audio/MUSIC_MEM_intro_PT2.MUSIC_MEM_intro_PT2",
+      "short_id": 346266048
+    },
+    {
+      "event": "/Game/Audio/MUSIC_intro_2_07.MUSIC_intro_2_07",
+      "short_id": 1467285986
+    },
+    {
+      "event": "/Game/Audio/MUSIC_memoria_1_2_07.MUSIC_memoria_1_2_07",
+      "short_id": 1071130518
+    },
+    {
+      "event": "/Game/Audio/MUSIC_memoria_2_2_07.MUSIC_memoria_2_2_07",
+      "short_id": 3844238279
+    },
+    {
+      "event": "/Game/Audio/MUSIC_memoria_3_2_07.MUSIC_memoria_3_2_07",
+      "short_id": 4010092100
+    },
+    {
+      "event": "/Game/Audio/SFX_AMB_LOOP_IN.SFX_AMB_LOOP_IN",
+      "short_id": 132463094
+    },
+    {
+      "event": "/Game/Audio/SFX_CABAN_A_IN.SFX_CABAN_A_IN",
+      "short_id": 1494292578
+    },
+    {
+      "event": "/Game/Audio/SFX_CAVE_Door.SFX_CAVE_Door",
+      "short_id": 3010942253
+    },
+    {
+      "event": "/Game/Audio/SFX_EXT_AMB.SFX_EXT_AMB",
+      "short_id": 2741818415
+    },
+    {
+      "event": "/Game/Audio/SFX_FINAL_Whispers.SFX_FINAL_Whispers",
+      "short_id": 4185068811
+    },
+    {
+      "event": "/Game/Audio/SFX_FUEGOS.SFX_FUEGOS",
+      "short_id": 855208736
+    },
+    {
+      "event": "/Game/Audio/SFX_MEMORIA0_FX.SFX_MEMORIA0_FX",
+      "short_id": 2712182988
+    },
+    {
+      "event": "/Game/Audio/SFX_MEMORIA1_Whispers.SFX_MEMORIA1_Whispers",
+      "short_id": 3101384552
+    },
+    {
+      "event": "/Game/Audio/SFX_MEMORIA2_Whispers.SFX_MEMORIA2_Whispers",
+      "short_id": 2951841805
+    },
+    {
+      "event": "/Game/Audio/SFX_MEMORIA_Leon.SFX_MEMORIA_Leon",
+      "short_id": 3380857166
+    },
+    {
+      "event": "/Game/Audio/SFX_SHELTER_IN.SFX_SHELTER_IN",
+      "short_id": 4040281706
+    },
+    {
+      "event": "/Game/Audio/SFX_STREAM.SFX_STREAM",
+      "short_id": 3223427141
+    },
+    {
+      "event": "/Game/Audio/SFX_STUART_AMB.SFX_STUART_AMB",
+      "short_id": 1214684181
+    },
+    {
+      "event": "/Game/Audio/SFX_STUART_CLEAN.SFX_STUART_CLEAN",
+      "short_id": 2139109102
+    },
+    {
+      "event": "/Game/Audio/SFX_Start.SFX_Start",
+      "short_id": 1279697655
+    },
+    {
+      "event": "/Game/Audio/TeleportIN.TeleportIN",
+      "short_id": 3172421901
+    },
+    {
+      "event": "/Game/Audio/TeleportOUT.TeleportOUT",
+      "short_id": 3183716756
+    }
+  ],
+  "curves": [
+    {
+      "sequence": "Zona_I",
+      "keys": 3
+    },
+    {
+      "sequence": "Zona_IV_Animation",
+      "keys": 6
+    },
+    {
+      "sequence": "Zona_IX",
+      "keys": 1
+    }
+  ],
+  "maps": [
+    {
+      "map": "Start",
+      "wwise_components": 30
+    },
+    {
+      "map": "Menu",
+      "wwise_components": 2
+    },
+    {
+      "map": "Valley",
+      "wwise_components": 4
+    },
+    {
+      "map": "Zona_I",
+      "wwise_components": 9
+    },
+    {
+      "map": "Zona_IV",
+      "wwise_components": 5
+    },
+    {
+      "map": "Zona_IX",
+      "wwise_components": 6
+    },
+    {
+      "map": "Zona_Test",
+      "wwise_components": 2
+    }
+  ],
+  "event_sections": 43,
+  "quest_configuration_valid": true
+}

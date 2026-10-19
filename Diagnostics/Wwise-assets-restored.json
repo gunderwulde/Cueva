@@ -1,0 +1,229 @@
+{
+  "events": [
+    "/Game/Audio/A_SFX_Drips.A_SFX_Drips",
+    "/Game/Audio/A_SFX_Fire_1.A_SFX_Fire_1",
+    "/Game/Audio/A_SFX_Fire_2.A_SFX_Fire_2",
+    "/Game/Audio/A_SFX_Water_1.A_SFX_Water_1",
+    "/Game/Audio/DEER.DEER",
+    "/Game/Audio/DX_B_1.DX_B_1",
+    "/Game/Audio/DX_B_10.DX_B_10",
+    "/Game/Audio/DX_B_11.DX_B_11",
+    "/Game/Audio/DX_B_12.DX_B_12",
+    "/Game/Audio/DX_B_13.DX_B_13",
+    "/Game/Audio/DX_B_14.DX_B_14",
+    "/Game/Audio/DX_B_15.DX_B_15",
+    "/Game/Audio/DX_B_16.DX_B_16",
+    "/Game/Audio/DX_B_2.DX_B_2",
+    "/Game/Audio/DX_B_3.DX_B_3",
+    "/Game/Audio/DX_B_4.DX_B_4",
+    "/Game/Audio/DX_B_5.DX_B_5",
+    "/Game/Audio/DX_B_6.DX_B_6",
+    "/Game/Audio/DX_B_7.DX_B_7",
+    "/Game/Audio/DX_B_8.DX_B_8",
+    "/Game/Audio/DX_B_9.DX_B_9",
+    "/Game/Audio/FrasesGameplay/DX_G_1.DX_G_1",
+    "/Game/Audio/FrasesGameplay/DX_G_10.DX_G_10",
+    "/Game/Audio/FrasesGameplay/DX_G_11.DX_G_11",
+    "/Game/Audio/FrasesGameplay/DX_G_12.DX_G_12",
+    "/Game/Audio/FrasesGameplay/DX_G_13.DX_G_13",
+    "/Game/Audio/FrasesGameplay/DX_G_2.DX_G_2",
+    "/Game/Audio/FrasesGameplay/DX_G_3.DX_G_3",
+    "/Game/Audio/FrasesGameplay/DX_G_4.DX_G_4",
+    "/Game/Audio/FrasesGameplay/DX_G_5.DX_G_5",
+    "/Game/Audio/FrasesGameplay/DX_G_6.DX_G_6",
+    "/Game/Audio/FrasesGameplay/DX_G_7.DX_G_7",
+    "/Game/Audio/FrasesGameplay/DX_G_8.DX_G_8",
+    "/Game/Audio/FrasesGameplay/DX_G_9.DX_G_9",
+    "/Game/Audio/FinalMusicStop.FinalMusicStop",
+    "/Game/Audio/Hotspot.Hotspot",
+    "/Game/Audio/LOADING_IN.LOADING_IN",
+    "/Game/Audio/LOADING_OUT.LOADING_OUT",
+    "/Game/Audio/Leonr_PRE.Leonr_PRE",
+    "/Game/Audio/MUSIC_LoopIN.MUSIC_LoopIN",
+    "/Game/Audio/MUSIC_LoopOUT.MUSIC_LoopOUT",
+    "/Game/Audio/MUSIC_MEM_intro_PT2.MUSIC_MEM_intro_PT2",
+    "/Game/Audio/MUSIC_intro_2_07.MUSIC_intro_2_07",
+    "/Game/Audio/MUSIC_memoria_1_2_07.MUSIC_memoria_1_2_07",
+    "/Game/Audio/MUSIC_memoria_2_2_07.MUSIC_memoria_2_2_07",
+    "/Game/Audio/MUSIC_memoria_3_2_07.MUSIC_memoria_3_2_07",
+    "/Game/Audio/SFX_AMB_LOOP_IN.SFX_AMB_LOOP_IN",
+    "/Game/Audio/SFX_CABAN_A_IN.SFX_CABAN_A_IN",
+    "/Game/Audio/SFX_CAVE_Door.SFX_CAVE_Door",
+    "/Game/Audio/SFX_EXT_AMB.SFX_EXT_AMB",
+    "/Game/Audio/SFX_FINAL_Whispers.SFX_FINAL_Whispers",
+    "/Game/Audio/SFX_FUEGOS.SFX_FUEGOS",
+    "/Game/Audio/SFX_MEMORIA0_FX.SFX_MEMORIA0_FX",
+    "/Game/Audio/SFX_MEMORIA1_Whispers.SFX_MEMORIA1_Whispers",
+    "/Game/Audio/SFX_MEMORIA2_Whispers.SFX_MEMORIA2_Whispers",
+    "/Game/Audio/SFX_MEMORIA_Leon.SFX_MEMORIA_Leon",
+    "/Game/Audio/SFX_SHELTER_IN.SFX_SHELTER_IN",
+    "/Game/Audio/SFX_STREAM.SFX_STREAM",
+    "/Game/Audio/SFX_STUART_AMB.SFX_STUART_AMB",
+    "/Game/Audio/SFX_STUART_CLEAN.SFX_STUART_CLEAN",
+    "/Game/Audio/SFX_Start.SFX_Start",
+    "/Game/Audio/TeleportIN.TeleportIN",
+    "/Game/Audio/TeleportOUT.TeleportOUT"
+  ],
+  "sequences": [
+    {
+      "asset": "/Game/Assets/Sequences/Menu.Menu",
+      "event_sections": 4,
+      "volume_sections": 0
+    },
+    {
+      "asset": "/Game/Assets/Sequences/Valley.Valley",
+      "event_sections": 6,
+      "volume_sections": 0
+    },
+    {
+      "asset": "/Game/Assets/Sequences/Zona_I.Zona_I",
+      "event_sections": 12,
+      "volume_sections": 1
+    },
+    {
+      "asset": "/Game/Assets/Sequences/Zona_IV_Animation.Zona_IV_Animation",
+      "event_sections": 10,
+      "volume_sections": 1
+    },
+    {
+      "asset": "/Game/Assets/Sequences/Zona_IX.Zona_IX",
+      "event_sections": 11,
+      "volume_sections": 1
+    },
+    {
+      "asset": "/Game/Assets/Sequences/Zona_Test.Zona_Test",
+      "event_sections": 0,
+      "volume_sections": 0
+    }
+  ],
+  "blueprints": [
+    {
+      "asset": "/Game/Blueprints/BaseLookableActor.BaseLookableActor",
+      "ok": true
+    },
+    {
+      "asset": "/Game/Blueprints/BP_MotionController.BP_MotionController",
+      "ok": true
+    },
+    {
+      "asset": "/Game/Blueprints/BP_pickable.BP_pickable",
+      "ok": true
+    },
+    {
+      "asset": "/Game/Blueprints/Caballo_BP.Caballo_BP",
+      "ok": true
+    },
+    {
+      "asset": "/Game/Blueprints/FakeTeleport_BP.FakeTeleport_BP",
+      "ok": true
+    },
+    {
+      "asset": "/Game/Blueprints/FlickerLight_BP.FlickerLight_BP",
+      "ok": true
+    },
+    {
+      "asset": "/Game/Blueprints/Logo_BP.Logo_BP",
+      "ok": true
+    },
+    {
+      "asset": "/Game/Blueprints/LookableActorInterface.LookableActorInterface",
+      "ok": true
+    },
+    {
+      "asset": "/Game/Blueprints/MainController_BP.MainController_BP",
+      "ok": true
+    },
+    {
+      "asset": "/Game/Blueprints/MemoryInterface.MemoryInterface",
+      "ok": true
+    },
+    {
+      "asset": "/Game/Blueprints/Memory_BP.Memory_BP",
+      "ok": true
+    },
+    {
+      "asset": "/Game/Blueprints/MotionControllerPawn.MotionControllerPawn",
+      "ok": true
+    },
+    {
+      "asset": "/Game/Blueprints/SmokeCloud_BP.SmokeCloud_BP",
+      "ok": true
+    },
+    {
+      "asset": "/Game/Blueprints/StaticMemory_BP.StaticMemory_BP",
+      "ok": true
+    },
+    {
+      "asset": "/Game/Blueprints/Teleport_BP.Teleport_BP",
+      "ok": true
+    },
+    {
+      "asset": "/Game/Blueprints/WaitTrigger_BP.WaitTrigger_BP",
+      "ok": true
+    },
+    {
+      "asset": "/Game/KiteDemo/Environments/Atmospherics/FogSphere/BP_FogSphere.BP_FogSphere",
+      "ok": true
+    },
+    {
+      "asset": "/Game/VirtualRealityBP/Blueprints/DeafultControllerPawn.DeafultControllerPawn",
+      "ok": true
+    },
+    {
+      "asset": "/Game/VirtualRealityBP/Blueprints/LaGarmaGameMode.LaGarmaGameMode",
+      "ok": true
+    },
+    {
+      "asset": "/Game/VirtualRealityBP/Blueprints/LevelStart_BP.LevelStart_BP",
+      "ok": true
+    },
+    {
+      "asset": "/Game/VirtualRealityBP/Blueprints/MenuGameMode.MenuGameMode",
+      "ok": true
+    }
+  ],
+  "maps": [
+    {
+      "map": "Start",
+      "ok": true,
+      "wwise_components": 30,
+      "remaining_native_audio_components": []
+    },
+    {
+      "map": "Menu",
+      "ok": true,
+      "wwise_components": 2,
+      "remaining_native_audio_components": []
+    },
+    {
+      "map": "Valley",
+      "ok": true,
+      "wwise_components": 4,
+      "remaining_native_audio_components": []
+    },
+    {
+      "map": "Zona_I",
+      "ok": true,
+      "wwise_components": 9,
+      "remaining_native_audio_components": []
+    },
+    {
+      "map": "Zona_IV",
+      "ok": true,
+      "wwise_components": 5,
+      "remaining_native_audio_components": []
+    },
+    {
+      "map": "Zona_IX",
+      "ok": true,
+      "wwise_components": 6,
+      "remaining_native_audio_components": []
+    },
+    {
+      "map": "Zona_Test",
+      "ok": true,
+      "wwise_components": 2,
+      "remaining_native_audio_components": []
+    }
+  ]
+}

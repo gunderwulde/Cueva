@@ -1,0 +1,400 @@
+{
+  "status": "Wwise restored and Android APK packaged/validated",
+  "original_wwise_version": "v2019.1.1",
+  "original_wwise_build": "6977",
+  "preserved_project": "E:\\Unreal_Projects\\LaGarma - 5.8\\LaGarma_UE58_Android\\LaGarma_WwiseProject\\LaGarma_WwiseProject.wproj",
+  "original_platforms": [
+    "Mac",
+    "Windows"
+  ],
+  "existing_plugin": {
+    "version": "2019.1.1.6977.1336",
+    "engine": "4.22.0",
+    "platform_libraries": [
+      "include",
+      "Mac",
+      "Win32_vc140",
+      "Win32_vc150",
+      "x64_vc140",
+      "x64_vc150"
+    ]
+  },
+  "event_count": 69,
+  "events_with_unreal_asset": 63,
+  "events": [
+    {
+      "name": "A_SFX_Drips",
+      "wwise_guid": "{0715DBC2-B2CF-4717-96E0-08CFD8A624A1}",
+      "unreal_asset": "/Game/Audio/A_SFX_Drips.A_SFX_Drips"
+    },
+    {
+      "name": "A_SFX_Fire_1",
+      "wwise_guid": "{80C07EEB-D32F-4C89-9662-9404AFC5D06E}",
+      "unreal_asset": "/Game/Audio/A_SFX_Fire_1.A_SFX_Fire_1"
+    },
+    {
+      "name": "A_SFX_Fire_2",
+      "wwise_guid": "{C50B8855-8D09-4F03-A8E4-A9273B9ACC71}",
+      "unreal_asset": "/Game/Audio/A_SFX_Fire_2.A_SFX_Fire_2"
+    },
+    {
+      "name": "A_SFX_Water_1",
+      "wwise_guid": "{3B2269FB-DF46-45A5-B3B2-CFCD45792B85}",
+      "unreal_asset": "/Game/Audio/A_SFX_Water_1.A_SFX_Water_1"
+    },
+    {
+      "name": "DEER",
+      "wwise_guid": "{AC0F761D-0E62-4AA8-BC81-A190BD8D044F}",
+      "unreal_asset": "/Game/Audio/DEER.DEER"
+    },
+    {
+      "name": "DX_B_1",
+      "wwise_guid": "{1BEA7FCB-3801-4FDC-915D-7FC9C4B573E8}",
+      "unreal_asset": "/Game/Audio/DX_B_1.DX_B_1"
+    },
+    {
+      "name": "DX_B_10",
+      "wwise_guid": "{0B4FEED4-D9E4-43B0-947B-D868E693AC21}",
+      "unreal_asset": "/Game/Audio/DX_B_10.DX_B_10"
+    },
+    {
+      "name": "DX_B_11",
+      "wwise_guid": "{FA6DAA27-27A4-45D0-877C-5534F434CBC6}",
+      "unreal_asset": "/Game/Audio/DX_B_11.DX_B_11"
+    },
+    {
+      "name": "DX_B_12",
+      "wwise_guid": "{B365A657-37F1-4E12-84DA-F0232A57F1F4}",
+      "unreal_asset": "/Game/Audio/DX_B_12.DX_B_12"
+    },
+    {
+      "name": "DX_B_13",
+      "wwise_guid": "{6A10702F-44F7-49A4-8E41-325ACBED460A}",
+      "unreal_asset": "/Game/Audio/DX_B_13.DX_B_13"
+    },
+    {
+      "name": "DX_B_14",
+      "wwise_guid": "{2A6BE946-79AF-463F-9A5C-2F2767E33071}",
+      "unreal_asset": "/Game/Audio/DX_B_14.DX_B_14"
+    },
+    {
+      "name": "DX_B_15",
+      "wwise_guid": "{CE17EEA2-7384-4B5E-B964-2309DC94A2D1}",
+      "unreal_asset": "/Game/Audio/DX_B_15.DX_B_15"
+    },
+    {
+      "name": "DX_B_16",
+      "wwise_guid": "{AF746349-6B9B-4DF1-8AD3-4D768FD3324D}",
+      "unreal_asset": "/Game/Audio/DX_B_16.DX_B_16"
+    },
+    {
+      "name": "DX_B_2",
+      "wwise_guid": "{1612A9BE-89CC-4955-8741-4477B3600747}",
+      "unreal_asset": "/Game/Audio/DX_B_2.DX_B_2"
+    },
+    {
+      "name": "DX_B_3",
+      "wwise_guid": "{E34ECDAC-71FA-457F-9DB0-7058EC4FF1ED}",
+      "unreal_asset": "/Game/Audio/DX_B_3.DX_B_3"
+    },
+    {
+      "name": "DX_B_4",
+      "wwise_guid": "{07D59699-613C-4D65-BC30-27D2142A25C0}",
+      "unreal_asset": "/Game/Audio/DX_B_4.DX_B_4"
+    },
+    {
+      "name": "DX_B_5",
+      "wwise_guid": "{68B3A96B-B4EB-468F-A01A-AA407CCCBF1C}",
+      "unreal_asset": "/Game/Audio/DX_B_5.DX_B_5"
+    },
+    {
+      "name": "DX_B_6",
+      "wwise_guid": "{25108D54-B9A8-455A-9C58-D679F96FCB47}",
+      "unreal_asset": "/Game/Audio/DX_B_6.DX_B_6"
+    },
+    {
+      "name": "DX_B_7",
+      "wwise_guid": "{A26C7603-BFF2-45F4-B491-98D0D46FFC50}",
+      "unreal_asset": "/Game/Audio/DX_B_7.DX_B_7"
+    },
+    {
+      "name": "DX_B_8",
+      "wwise_guid": "{CE9DF993-FD94-4A97-A749-C735BD298A0B}",
+      "unreal_asset": "/Game/Audio/DX_B_8.DX_B_8"
+    },
+    {
+      "name": "DX_B_9",
+      "wwise_guid": "{11148282-6560-461A-953D-91BCD8DDA1D2}",
+      "unreal_asset": "/Game/Audio/DX_B_9.DX_B_9"
+    },
+    {
+      "name": "DX_G_1",
+      "wwise_guid": "{087E2A35-A593-4059-AEB8-60371BACAFDF}",
+      "unreal_asset": "/Game/Audio/FrasesGameplay/DX_G_1.DX_G_1"
+    },
+    {
+      "name": "DX_G_10",
+      "wwise_guid": "{69361EA3-FB82-4A38-B2C2-976F379FF897}",
+      "unreal_asset": "/Game/Audio/FrasesGameplay/DX_G_10.DX_G_10"
+    },
+    {
+      "name": "DX_G_11",
+      "wwise_guid": "{4C837AF4-8F91-42E8-8CC0-19CAA4469887}",
+      "unreal_asset": "/Game/Audio/FrasesGameplay/DX_G_11.DX_G_11"
+    },
+    {
+      "name": "DX_G_12",
+      "wwise_guid": "{9509546F-2828-4E08-ACDA-C43259CD600E}",
+      "unreal_asset": "/Game/Audio/FrasesGameplay/DX_G_12.DX_G_12"
+    },
+    {
+      "name": "DX_G_13",
+      "wwise_guid": "{921ECBE3-FDD0-4D5E-93E1-AFCA9F26183A}",
+      "unreal_asset": "/Game/Audio/FrasesGameplay/DX_G_13.DX_G_13"
+    },
+    {
+      "name": "DX_G_2",
+      "wwise_guid": "{41CE8441-9978-40A7-95FC-7E642F278B88}",
+      "unreal_asset": "/Game/Audio/FrasesGameplay/DX_G_2.DX_G_2"
+    },
+    {
+      "name": "DX_G_3",
+      "wwise_guid": "{0EEB9651-DB25-4F40-A39B-E3670440A43C}",
+      "unreal_asset": "/Game/Audio/FrasesGameplay/DX_G_3.DX_G_3"
+    },
+    {
+      "name": "DX_G_4",
+      "wwise_guid": "{C333E364-3468-4BB2-896B-27C76BE4A287}",
+      "unreal_asset": "/Game/Audio/FrasesGameplay/DX_G_4.DX_G_4"
+    },
+    {
+      "name": "DX_G_5",
+      "wwise_guid": "{2986121D-0338-42F9-9AE0-FDEBA57C56A6}",
+      "unreal_asset": "/Game/Audio/FrasesGameplay/DX_G_5.DX_G_5"
+    },
+    {
+      "name": "DX_G_6",
+      "wwise_guid": "{55FC9BF7-FA18-4C12-AFDB-6DD59C72D50F}",
+      "unreal_asset": "/Game/Audio/FrasesGameplay/DX_G_6.DX_G_6"
+    },
+    {
+      "name": "DX_G_7",
+      "wwise_guid": "{E6F41EDC-DB40-4CD4-9A66-B74221D1CC98}",
+      "unreal_asset": "/Game/Audio/FrasesGameplay/DX_G_7.DX_G_7"
+    },
+    {
+      "name": "DX_G_8",
+      "wwise_guid": "{38CED75F-01DF-45D8-8FA1-0FAD8EA125AE}",
+      "unreal_asset": "/Game/Audio/FrasesGameplay/DX_G_8.DX_G_8"
+    },
+    {
+      "name": "DX_G_9",
+      "wwise_guid": "{C68C2B7A-A556-4BEC-AFA5-E9382B38469C}",
+      "unreal_asset": "/Game/Audio/FrasesGameplay/DX_G_9.DX_G_9"
+    },
+    {
+      "name": "FinalMusicStop",
+      "wwise_guid": "{8B536588-42F6-4AF6-8A05-3E6344E554C7}",
+      "unreal_asset": "/Game/Audio/FinalMusicStop.FinalMusicStop"
+    },
+    {
+      "name": "Hotspot",
+      "wwise_guid": "{441B3E59-75EC-4FCA-B075-D8D7F87A808A}",
+      "unreal_asset": "/Game/Audio/Hotspot.Hotspot"
+    },
+    {
+      "name": "HotspotSTOP",
+      "wwise_guid": "{14F7F2B7-30EB-428A-988E-49B21DDFDD25}",
+      "unreal_asset": null
+    },
+    {
+      "name": "LOADING_IN",
+      "wwise_guid": "{403BD57C-FAFB-497C-8F53-1B7DD2725087}",
+      "unreal_asset": "/Game/Audio/LOADING_IN.LOADING_IN"
+    },
+    {
+      "name": "LOADING_OUT",
+      "wwise_guid": "{9258E6F1-3B08-40CC-B539-88C99DDB5FF7}",
+      "unreal_asset": "/Game/Audio/LOADING_OUT.LOADING_OUT"
+    },
+    {
+      "name": "Leonr_PRE",
+      "wwise_guid": "{9A418501-3A5A-4FDA-964E-38F252D218E4}",
+      "unreal_asset": "/Game/Audio/Leonr_PRE.Leonr_PRE"
+    },
+    {
+      "name": "MUSIC_LOOP2",
+      "wwise_guid": "{3364DF8D-0B8A-43CE-8A03-65F656D518AB}",
+      "unreal_asset": null
+    },
+    {
+      "name": "MUSIC_LoopIN",
+      "wwise_guid": "{E81F7C85-CA59-4A65-AFC3-9851CC1A21BC}",
+      "unreal_asset": "/Game/Audio/MUSIC_LoopIN.MUSIC_LoopIN"
+    },
+    {
+      "name": "MUSIC_LoopOUT",
+      "wwise_guid": "{AB0EB978-2288-41C6-B8C4-DBC9696DC47E}",
+      "unreal_asset": "/Game/Audio/MUSIC_LoopOUT.MUSIC_LoopOUT"
+    },
+    {
+      "name": "MUSIC_MEM_intro_PT2",
+      "wwise_guid": "{3728A740-1D9C-4A56-A8CC-5DA4F87A4F0B}",
+      "unreal_asset": "/Game/Audio/MUSIC_MEM_intro_PT2.MUSIC_MEM_intro_PT2"
+    },
+    {
+      "name": "MUSIC_intro_2_07",
+      "wwise_guid": "{8AF7231B-8AF1-48AC-8B9C-5B3711879070}",
+      "unreal_asset": "/Game/Audio/MUSIC_intro_2_07.MUSIC_intro_2_07"
+    },
+    {
+      "name": "MUSIC_memoria_1_2_07",
+      "wwise_guid": "{63ACE897-05A5-4544-8E97-6D2ACC314E11}",
+      "unreal_asset": "/Game/Audio/MUSIC_memoria_1_2_07.MUSIC_memoria_1_2_07"
+    },
+    {
+      "name": "MUSIC_memoria_2_2_07",
+      "wwise_guid": "{BB4F655B-BC54-47CF-B528-826F1D28CC47}",
+      "unreal_asset": "/Game/Audio/MUSIC_memoria_2_2_07.MUSIC_memoria_2_2_07"
+    },
+    {
+      "name": "MUSIC_memoria_3_2_07",
+      "wwise_guid": "{91C3BDCF-115D-4A77-9DE5-31A9666DF8D2}",
+      "unreal_asset": "/Game/Audio/MUSIC_memoria_3_2_07.MUSIC_memoria_3_2_07"
+    },
+    {
+      "name": "RESUME",
+      "wwise_guid": "{952D9FB7-22D0-4C71-A7A9-58D4E7E765B7}",
+      "unreal_asset": null
+    },
+    {
+      "name": "SFX_AMB_LOOP_IN",
+      "wwise_guid": "{4B90435D-CD0C-4E67-9902-2B5C744A0373}",
+      "unreal_asset": "/Game/Audio/SFX_AMB_LOOP_IN.SFX_AMB_LOOP_IN"
+    },
+    {
+      "name": "SFX_CABAN_A_IN",
+      "wwise_guid": "{2C1B1D1E-1079-4019-B052-394EA3D89BB2}",
+      "unreal_asset": "/Game/Audio/SFX_CABAN_A_IN.SFX_CABAN_A_IN"
+    },
+    {
+      "name": "SFX_CAVE_Collapse",
+      "wwise_guid": "{0B1C87AB-EC32-49D7-9A23-72857D31E121}",
+      "unreal_asset": null
+    },
+    {
+      "name": "SFX_CAVE_Door",
+      "wwise_guid": "{C44E25AD-43F9-4713-9B23-F3DFF9CFB3CB}",
+      "unreal_asset": "/Game/Audio/SFX_CAVE_Door.SFX_CAVE_Door"
+    },
+    {
+      "name": "SFX_CAVE_Wind",
+      "wwise_guid": "{AF4652D1-3C1B-488E-AC38-7EAFD78C2E8D}",
+      "unreal_asset": null
+    },
+    {
+      "name": "SFX_EXT_AMB",
+      "wwise_guid": "{2D276360-F09D-45F6-81AD-593DCF1CB731}",
+      "unreal_asset": "/Game/Audio/SFX_EXT_AMB.SFX_EXT_AMB"
+    },
+    {
+      "name": "SFX_FINAL_Whispers",
+      "wwise_guid": "{C97EFB1D-1ED9-4799-B0F4-E6F417C506F9}",
+      "unreal_asset": "/Game/Audio/SFX_FINAL_Whispers.SFX_FINAL_Whispers"
+    },
+    {
+      "name": "SFX_FUEGOS",
+      "wwise_guid": "{4A0574A1-D6A3-4B82-AB4E-5A36B29387B8}",
+      "unreal_asset": "/Game/Audio/SFX_FUEGOS.SFX_FUEGOS"
+    },
+    {
+      "name": "SFX_MEMORIA0_FX",
+      "wwise_guid": "{4EC12682-E0E8-43B3-9140-8F76690DB1E0}",
+      "unreal_asset": "/Game/Audio/SFX_MEMORIA0_FX.SFX_MEMORIA0_FX"
+    },
+    {
+      "name": "SFX_MEMORIA1_Whispers",
+      "wwise_guid": "{E8E478A6-9D88-47F2-A7E8-1ED130D63F06}",
+      "unreal_asset": "/Game/Audio/SFX_MEMORIA1_Whispers.SFX_MEMORIA1_Whispers"
+    },
+    {
+      "name": "SFX_MEMORIA2_Whispers",
+      "wwise_guid": "{56CDA4D4-0665-4AF5-A9F8-721CB743892D}",
+      "unreal_asset": "/Game/Audio/SFX_MEMORIA2_Whispers.SFX_MEMORIA2_Whispers"
+    },
+    {
+      "name": "SFX_MEMORIA_Leon",
+      "wwise_guid": "{EAF6A015-9A73-469E-AEA5-92031C49D2CE}",
+      "unreal_asset": "/Game/Audio/SFX_MEMORIA_Leon.SFX_MEMORIA_Leon"
+    },
+    {
+      "name": "SFX_SHELTER_IN",
+      "wwise_guid": "{367318E1-37F4-4A61-9DD6-58B02E2B7963}",
+      "unreal_asset": "/Game/Audio/SFX_SHELTER_IN.SFX_SHELTER_IN"
+    },
+    {
+      "name": "SFX_STREAM",
+      "wwise_guid": "{6F8A291E-8FF5-4F66-BE8E-A5727A3BB60B}",
+      "unreal_asset": "/Game/Audio/SFX_STREAM.SFX_STREAM"
+    },
+    {
+      "name": "SFX_STUART_AMB",
+      "wwise_guid": "{F3A4A005-F8F0-4FAB-AED6-1DE5377E7D48}",
+      "unreal_asset": "/Game/Audio/SFX_STUART_AMB.SFX_STUART_AMB"
+    },
+    {
+      "name": "SFX_STUART_CLEAN",
+      "wwise_guid": "{FCBC467C-EB7B-4ED8-98A2-E9E63AC68302}",
+      "unreal_asset": "/Game/Audio/SFX_STUART_CLEAN.SFX_STUART_CLEAN"
+    },
+    {
+      "name": "SFX_Start",
+      "wwise_guid": "{94CCE780-1C78-4827-9FA3-B73B17AFDD7A}",
+      "unreal_asset": "/Game/Audio/SFX_Start.SFX_Start"
+    },
+    {
+      "name": "STOP_ALL",
+      "wwise_guid": "{6CF4B99B-A584-4BE2-A567-728467475BAD}",
+      "unreal_asset": null
+    },
+    {
+      "name": "TeleportIN",
+      "wwise_guid": "{EF83DFF9-30F2-4B70-983B-F509DA41A7C0}",
+      "unreal_asset": "/Game/Audio/TeleportIN.TeleportIN"
+    },
+    {
+      "name": "TeleportOUT",
+      "wwise_guid": "{E1C0C172-4638-4A15-B3EB-FBB47258EADA}",
+      "unreal_asset": "/Game/Audio/TeleportOUT.TeleportOUT"
+    }
+  ],
+  "referenced_wav_sources": 110,
+  "missing_wav_sources": [],
+  "generated_android_banks": [],
+  "target_wwise_version": "2025.1.11 (UE 5.8 integration announced by Audiokinetic)",
+  "restoration_work": [
+    "Upgrade a copy of the preserved Wwise project and add the Android platform.",
+    "Install matching Unreal integration and Windows/Android sound engine libraries.",
+    "Replace native audio event/component/Sequencer references and conflicting AkAudio redirects.",
+    "Restore language, RTPC, callback, attenuation and mixer routing through Wwise.",
+    "Generate Android SoundBanks, compile, validate Blueprints and package a new APK."
+  ],
+  "working_project_audio_backend_changed": false,
+  "current_working_apk": "E:\\Unreal_Projects\\LaGarma - 5.8\\Builds\\Quest3-r3\\Android_ASTC\\LaGarma-arm64.apk",
+  "sources": [
+    "https://www.linkedin.com/posts/audiokinetic_wwise-unity-unreal-activity-7506031040885354496-pbvp",
+    "https://www.audiokinetic.com/en/library/Launcher_2023.2.4.3909/?id=getting_started&source=InstallGuide"
+  ],
+  "installed_authoring_version": "2025.1.11.9262",
+  "installed_integration_version": "2025.1.11.9262.4509",
+  "installed_platforms": [
+    "Windows x64 vc170",
+    "Windows x64 vc180",
+    "Android ARM64"
+  ],
+  "native_audio_backup": "Backups/UE58_NativeAudio_1.0.2_BeforeWwise",
+  "bank_generation": "Windows and Android; English(US) and Spanish; exit 0",
+  "asset_validation": "Wwise-validation.json",
+  "playback_validation": "Wwise-playback-smoke.json",
+  "apk_validation": "Wwise-Quest-apk-validation.json"
+}
